@@ -2,10 +2,6 @@ html {
     box-sizing: border-box;
 }
 
-* {
-    margin: 2px;
-}
-
 *,
 *:before,
 *:after {
@@ -32,26 +28,28 @@ input[type=text],
 input[type=email],
 input[type=tel],
 input[type=number] {
-    width: 95%;
+    width: 100%;
     padding: 7px;
-    margin: 9px 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+.country,
+textarea {
+    border: 1px solid #ccc;
 }
 
 .country {
     padding: 5px;
-    margin: 9px 5px;
-    width: 95%;
+    width: 100%;
 }
 
 textarea {
     padding: 8px;
-    margin: 5px 20px;
-    width: 90%;
-    height: 100px;
-}
-
-.border-1px {
-    border: 1px solid #ccc;
+    height: 150px;
+    width: 100%;
 }
 
 h1 {
@@ -62,10 +60,8 @@ h1 {
     font-weight: lighter;
 }
 
-label {
+.sticky_label {
     font-size: 12px;
-    margin: 10px 6px;
-    font-weight: 200;
 }
 
 .container {
@@ -73,12 +69,13 @@ label {
 }
 
 .note_para {
-    padding: 0 5px;
-    margin: 0 13px;
+    margin: 2px 0 4px 0;
+    font-weight: 600;
+    color: #5a5757;
 }
 
 .btn_submit {
-    background-color: #13a5e7;
+    background-color: #237ABE;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -101,25 +98,44 @@ label {
 }
 
 .product_left,
-.notes_right {
-    float: left;
-    padding: 20px;
+.notes_right,
+.grid-col-s,
+.size_70,
+.size_30,
+.comments,
+.col-spacing {
+    padding: 5px 10px;
 }
 
-.products_container:after {
+.product_left,
+.notes_right {
+    width: 100% !important;
+    float: left;
+}
+
+.grid_row::after {
     content: "";
     display: table;
     clear: both;
 }
 
+.grid-col-s {
+    float: left;
+    width: 100%;
+}
 
-/* .display-none {
-    display: none;
-} */
+.size_70,
+.size_30 {
+    float: left;
+}
 
 .product_left,
 .notes_right {
-    width: 100% !important;
+    padding: 20px !important;
+}
+
+.col-spacing {
+    padding: 5px 10px;
 }
 
 @media(max-width:480px) {
@@ -129,119 +145,47 @@ label {
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
+    .grid-col-md {
+        width: 50% !important;
+    }
     .product_left,
     .notes_right {
         padding: 20px !important;
-    }
-    .size_33 {
-        width: 33.33% !important;
-    }
-    .contact-left .size_50 {
-        width: 47% !important;
-    }
-    .address_section .size_50 {
-        width: 47.05% !important;
     }
     .size_70 {
         width: 68% !important;
     }
     .size_30 {
-        width: 25.5% !important;
-    }
-    .country {
-        width: 50% !important;
+        width: 32% !important;
     }
     .title {
         border-bottom: 1px solid #ccc;
-        margin-right: 15px;
-    }
-    .header {
-        font-weight: lighter;
-        padding: 2px 5px;
-    }
-    .label {
-        float: right;
-        margin-right: 308px;
-        margin-top: 2px;
-    }
-    .address>input {
-        width: 96.05%
-    }
-    .notes_right .title {
-        margin-right: 30px;
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .product_left,
-    .notes_right {
-        padding: 20px !important;
+@media (min-width:769px) {
+    .grid-col-l {
+        width: 50% !important;
     }
     .product_left {
-        width: 55% !important;
+        width: 50% !important;
     }
     .notes_right {
-        width: 43% !important;
-    }
-    .size_33 {
-        width: 33.33% !important;
+        width: 50% !important;
     }
     .size_70 {
-        width: 59% !important;
+        width: 68% !important;
     }
     .size_30 {
-        width: 30% !important;
+        width: 32% !important;
     }
     .contact-left {
         width: 35% !important;
     }
     .address-right {
-        width: 63% !important;
-    }
-    .address_section .size_50 {
-        width: 47.15% !important;
-    }
-    .contact-left,
-    .address-right {
-        margin-top: 2px;
-    }
-    .header {
-        font-weight: lighter;
-    }
-    .address>input {
-        width: 95.4%;
-    }
-    .address input:nth-child(2) {
-        display: none;
-    }
-    .address input:nth-child(1) {
-        width: 96.8%;
-    }
-    textarea {
-        height: 150px;
-        width: 90%;
+        width: 65% !important;
     }
     .title {
         border-bottom: 1px solid #ccc;
-        margin-right: 5px;
-    }
-    .notes_right .title {
-        margin-left: 12px;
-    }
-    .address-right .title {
-        margin-right: 13px;
-    }
-    .product_left .title {
-        margin-right: 20px;
-    }
-    .notes_right .title {
-        margin-right: 12px;
-    }
-    .label {
-        font-size: 12px;
-        margin: 1px 6px;
-        margin-right: 245px;
-        font-weight: 200;
-        float: right;
     }
 }

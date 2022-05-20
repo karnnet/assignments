@@ -16,54 +16,92 @@
             <div class="contact_container">
                 <div class="contact-left">
                     <div class="title">CONTACT INFORMATION</div>
-                    <input class="size_50 border-1px" type="text" minlength="3" maxlength="10" placeholder="First name*" required>
-
-                    <input class="size_50 border-1px" type="text" minlength="3" maxlength="10" placeholder="Last name*" required>
-
-                    <input class="size_50 border-1px" type="email" placeholder="Email*" pattern=".+@qualminds\.com|.+gmail\.com" size="30" required>
-
-                    <input class="size_50 border-1px" type="tel" placeholder="Phone" pattern="[0-9]{10}" required>
+                    <div class="grid-row">
+                        <div class="grid-col-s grid-col-md">
+                            <input type="text" minlength="3" maxlength="10" placeholder="First name*" required>
+                        </div>
+                        <div class="grid-col-s grid-col-md">
+                            <input type="text" minlength="3" maxlength="10" placeholder="Last name*" required>
+                        </div>
+                        <div class="grid-col-s grid-col-md">
+                            <input type="email" placeholder="Email*" pattern=".+@qualminds\.com|.+gmail\.com" size="30" required>
+                        </div>
+                        <div class="grid-col-s grid-col-md">
+                            <input type="tel" placeholder="Phone" maxlength="10" pattern="\d{10}" required>
+                        </div>
+                    </div>
                 </div>
                 <div class="address-right">
                     <div class="title">ADDRESS</div>
                     <div class="address">
-                        <input class="border-1px" type="text" placeholder="Street line 1*" minlength="3" maxlength="10" required>
-                        <input class="border-1px" type="text" placeholder="Street line 2" minlength="3" maxlength="10" required>
+                        <div class="grid-row">
+                            <div class="grid-col-s">
+                                <input type="text" placeholder="Street line 1*" minlength="3" maxlength="10" required>
+                            </div>
+                            <div class="grid-col-s">
+                                <input type="text" placeholder="Street line 2" minlength="3" maxlength="10" required>
+                            </div>
+                        </div>
                     </div>
-                    <div class="address_section">
-                        <input class="size_50 border-1px" type="text" placeholder="City*" required>
-                        <input class="size_50 border-1px" type="text" placeholder="State/Province*" required>
-                        <input class="size_50 border-1px" type="tel" pattern="[0-9]{5}" placeholder="Postal/Zip code*" required>
-                        <select class="country border-1px size_50" name="Country" id="Country" required>
-                        <option value="">--Please Select--</option>
-                        <option value="India">INDIA</option>
-                        <option value="US">US</option>
-                        <option value="UK">UK</option>
-                        <option value="UAE">UAE</option>
-                        <option value="CHINA">CHINA</option>
-                    </select>
-                        <label class="label">Country*</label>
+                    <div class="grid-row">
+                        <div class="grid-col-s grid-col-md grid-col-l">
+                            <input type="text" placeholder="City*" required>
+                        </div>
+                        <div class="grid-col-s grid-col-md grid-col-l">
+                            <input type="text" placeholder="State/Province*" required>
+
+                        </div>
+                        <div class="grid-col-s grid-col-md grid-col-l">
+                            <input type="tel" pattern="[0-9]{5}" placeholder="Postal/Zip code*" required>
+
+                        </div>
+                        <div class="grid-col-s grid-col-md grid-col-l">
+                            <select class="country" name="Country" id="Country" required>
+                                        <option value="">--Please Select--</option>
+                                        <option value="India">INDIA</option>
+                                        <option value="US">US</option>
+                                        <option value="UK">UK</option>
+                                        <option value="UAE">UAE</option>
+                                        <option value="CHINA">CHINA</option>
+                                    </select>
+                            <label class="sticky_label">Country*</label>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
 
-            <div class="products_container">
+            <div class="grid_row">
                 <div class="product_left">
                     <div class="title">PRODUCTS</div>
                     <div class="products">
-                        <input class="size_70 border-1px" type="text" pattern="[A-Za-z]{6}" placeholder="item # 1 name" required>
-                        <input class="size_30 border-1px" type="number" placeholder="item # 1 quantity" required>
-                        <input class="size_70 border-1px" type="text" pattern="[A-Za-z]{6}" maxlength="6" placeholder="item # 2 name" required>
-                        <input class="size_30 border-1px" type="number" placeholder="item # 2 quantity" required>
-                        <input class="size_70 border-1px" type="text" pattern="[A-Za-z]{6}" maxlength="6" placeholder="item # 3 name" required>
-                        <input class="size_30 border-1px" type="number" placeholder="item # 3 quantity" required>
+                        <div class="grid-col-s size_70">
+                            <input type="text" pattern="[A-Za-z]{6}" placeholder="item # 1 name" required>
+                        </div>
+                        <div class="grid-col-s size_30">
+                            <input type="number" placeholder="item # 1 quantity" required>
+                        </div>
+                        <div class="grid-col-s size_70">
+                            <input type="text" pattern="[A-Za-z]{6}" maxlength="6" placeholder="item # 2 name" required>
+                        </div>
+                        <div class="grid-col-s size_30">
+                            <input type="number" placeholder="item # 2 quantity" required>
+                        </div>
+                        <div class="grid-col-s size_70">
+                            <input type="text" pattern="[A-Za-z]{6}" maxlength="6" placeholder="item # 3 name" required>
+                        </div>
+                        <div class="grid-col-s size_30">
+                            <input type="number" placeholder="item # 3 quantity" required>
+                        </div>
                     </div>
                 </div>
                 <div class="notes_right">
                     <div class="title">NOTES</div>
-                    <p class="note_para">Additional comments or questions</p>
-                    <textarea class="border-1px" maxlength="200" cols="30" rows="5" placeholder="Write here......" required></textarea>
+                    <div class="comments">
+                        <p class="note_para">Additional comments or questions</p>
+                        <textarea maxlength="200" cols="30" rows="5" placeholder="Write here......" required></textarea>
+                    </div>
                 </div>
             </div>
             <button class="btn_submit" type="submit">REQUEST QUOTE</button>
