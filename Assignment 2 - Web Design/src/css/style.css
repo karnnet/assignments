@@ -2,38 +2,49 @@ html {
     box-sizing: border-box;
 }
 
-* {
-    margin: 2px;
-}
-
-.container,
-{
-    height: inherit;
-}
-
 html,
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: Roboto, Raleway, sans-serif;
     height: 100%;
+    width: 100%;
     font-size: 15px;
+    margin: 0;
 }
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+    padding: 3px;
+}
+
+
+/* START: header section */
 
 .header {
     width: 100%;
-    text-align: center;
-    padding: 5px;
+    padding: 20px 10px;
     border-bottom: 1px solid #ccc;
 }
 
-.header:after {
+.header-row::after,
+.price-row::after,
+.footer-row::after,
+.footer-row-column {
     content: "";
     display: table;
     clear: both;
 }
 
-.header-left {
+.header-left,
+.header-navigation {
     float: left;
     width: 100%;
+    text-align: center;
+    padding: 5px;
 }
 
 .header-left a {
@@ -41,53 +52,117 @@ body {
     color: inherit;
 }
 
-.header-navigation {
-    float: left;
-    width: 100%;
-}
-
 .nav-link a {
     text-decoration: none;
     color: inherit;
+    padding: 5px;
+}
+
+
+/* END: header section */
+
+
+/* .content {
+    padding: 5px;
+} */
+
+.price-heading {
+    margin: 20px 0 5px 0;
+    font-size: 44px;
+    font-weight: 200;
 }
 
 .pricing {
     text-align: center;
+    align-content: center;
     font-size: 15px;
     color: inherit;
+    padding: 20px;
 }
 
 .price-row {
     width: 100%;
 }
 
-.price-free {
+.price-free-col,
+.price-pro-col,
+.price-enterprise-col {
     width: 100%;
+    padding: 10px;
 }
 
-.price-pro {
+.package {
+    border: 1px solid #ccc;
+    min-width: 250px;
+    max-width: 450px;
+}
+
+.pricing-header {
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: #faf3f3;
+}
+
+.btn-free,
+.btn-priced {
+    padding: 10px;
     width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.price-enterprise {
+.btn-free {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.btn-priced {
+    background-color: blue;
+    color: white;
+}
+
+.pricing-content {
+    text-align: center;
+    padding: 5px 15px 15px 15px;
+}
+
+.pricing-content ul {
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.price-value {
+    font-size: 35px;
+    line-height: 1.8;
+}
+
+.price-month {
+    font-size: 25px;
+    color: #807878;
+}
+
+.footer {
+    padding: 15px;
+}
+
+.footer-row {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.footer-row-column {
+    float: left;
     width: 100%;
+    padding: 10px;
 }
 
-.free ul li {
-    list-style-type: none;
-    text-align: center;
+.footer-ul {
+    float: left;
+    width: 50%;
 }
 
-.pro ul li {
-    list-style-type: none;
-    text-align: center;
-}
-
-.enterprise ul li {
-    list-style-type: none;
-    text-align: center;
-}
-
-li {
-    list-style-type: none;
+.footer-heading {
+    margin: 5px 0;
 }
