@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 2px;
+}
+
+.container,
+{
+    height: inherit;
+}
+
+html,
+body {
+    font-family: "Raleway", sans-serif;
+    height: 100%;
+    font-size: 15px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-left {
+    float: left;
+    width: 100%;
+}
+
+.header-left a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-navigation {
+    float: left;
+    width: 100%;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pricing {
+    text-align: center;
+    font-size: 15px;
+    color: inherit;
+}
+
+.price-row {
+    width: 100%;
+}
+
+.price-free {
+    width: 100%;
+}
+
+.price-pro {
+    width: 100%;
+}
+
+.price-enterprise {
+    width: 100%;
+}
+
+.free ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.pro ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.enterprise ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}

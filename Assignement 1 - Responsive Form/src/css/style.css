@@ -1,0 +1,247 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 2px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+    height: 100%;
+}
+
+.title {
+    line-height: 2.5;
+    border-bottom: none;
+    margin-bottom: 12px;
+    font-weight: 200;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number] {
+    width: 95%;
+    padding: 7px;
+    margin: 9px 5px;
+}
+
+.country {
+    padding: 5px;
+    margin: 9px 5px;
+    width: 95%;
+}
+
+textarea {
+    padding: 8px;
+    margin: 5px 20px;
+    width: 90%;
+    height: 100px;
+}
+
+.border-1px {
+    border: 1px solid #ccc;
+}
+
+h1 {
+    margin: 15px;
+}
+
+.header {
+    font-weight: lighter;
+}
+
+label {
+    font-size: 12px;
+    margin: 10px 6px;
+    font-weight: 200;
+}
+
+.container {
+    width: 100%;
+}
+
+.note_para {
+    padding: 0 5px;
+    margin: 0 13px;
+}
+
+.btn_submit {
+    background-color: #13a5e7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 24px;
+}
+
+.contact-left,
+.address-right {
+    float: left;
+    padding: 20px;
+}
+
+.contact_container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.product_left,
+.notes_right {
+    float: left;
+    padding: 20px;
+}
+
+.products_container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* .display-none {
+    display: none;
+} */
+
+.product_left,
+.notes_right {
+    width: 100% !important;
+}
+
+@media(max-width:480px) {
+    .header {
+        display: none;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .product_left,
+    .notes_right {
+        padding: 20px !important;
+    }
+    .size_33 {
+        width: 33.33% !important;
+    }
+    .contact-left .size_50 {
+        width: 47% !important;
+    }
+    .address_section .size_50 {
+        width: 47.05% !important;
+    }
+    .size_70 {
+        width: 68% !important;
+    }
+    .size_30 {
+        width: 25.5% !important;
+    }
+    .country {
+        width: 50% !important;
+    }
+    .title {
+        border-bottom: 1px solid #ccc;
+        margin-right: 15px;
+    }
+    .header {
+        font-weight: lighter;
+        padding: 2px 5px;
+    }
+    .label {
+        float: right;
+        margin-right: 308px;
+        margin-top: 2px;
+    }
+    .address>input {
+        width: 96.05%
+    }
+    .notes_right .title {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .product_left,
+    .notes_right {
+        padding: 20px !important;
+    }
+    .product_left {
+        width: 55% !important;
+    }
+    .notes_right {
+        width: 43% !important;
+    }
+    .size_33 {
+        width: 33.33% !important;
+    }
+    .size_70 {
+        width: 59% !important;
+    }
+    .size_30 {
+        width: 30% !important;
+    }
+    .contact-left {
+        width: 35% !important;
+    }
+    .address-right {
+        width: 63% !important;
+    }
+    .address_section .size_50 {
+        width: 47.15% !important;
+    }
+    .contact-left,
+    .address-right {
+        margin-top: 2px;
+    }
+    .header {
+        font-weight: lighter;
+    }
+    .address>input {
+        width: 95.4%;
+    }
+    .address input:nth-child(2) {
+        display: none;
+    }
+    .address input:nth-child(1) {
+        width: 96.8%;
+    }
+    textarea {
+        height: 150px;
+        width: 90%;
+    }
+    .title {
+        border-bottom: 1px solid #ccc;
+        margin-right: 5px;
+    }
+    .notes_right .title {
+        margin-left: 12px;
+    }
+    .address-right .title {
+        margin-right: 13px;
+    }
+    .product_left .title {
+        margin-right: 20px;
+    }
+    .notes_right .title {
+        margin-right: 12px;
+    }
+    .label {
+        font-size: 12px;
+        margin: 1px 6px;
+        margin-right: 245px;
+        font-weight: 200;
+        float: right;
+    }
+}
