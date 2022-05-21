@@ -1,4 +1,6 @@
-html {
+html,
+body,
+div {
     box-sizing: border-box;
 }
 
@@ -62,9 +64,7 @@ li {
 /* END: header section */
 
 
-/* .content {
-    padding: 5px;
-} */
+/* START pricing section */
 
 .price-heading {
     margin: 20px 0 5px 0;
@@ -77,7 +77,11 @@ li {
     align-content: center;
     font-size: 15px;
     color: inherit;
-    padding: 20px;
+    padding: 10px;
+}
+
+.pricing p {
+    text-align: center;
 }
 
 .price-row {
@@ -89,12 +93,13 @@ li {
 .price-enterprise-col {
     width: 100%;
     padding: 10px;
+    float: left;
 }
 
 .package {
     border: 1px solid #ccc;
-    min-width: 250px;
-    max-width: 450px;
+    /* min-width: 250px;
+    max-width: 450px; */
 }
 
 .pricing-header {
@@ -114,12 +119,12 @@ li {
 }
 
 .btn-free {
-    border: 1px solid blue;
-    color: blue;
+    border: 1px solid #237ABE;
+    color: #237ABE;
 }
 
 .btn-priced {
-    background-color: blue;
+    background-color: #237ABE;
     color: white;
 }
 
@@ -143,6 +148,12 @@ li {
     color: #807878;
 }
 
+
+/* END pricing section */
+
+
+/* START Footer section */
+
 .footer {
     padding: 15px;
 }
@@ -152,7 +163,8 @@ li {
     padding: 20px 0;
 }
 
-.footer-row-column {
+.footer-column,
+.footer-column-span2 {
     float: left;
     width: 100%;
     padding: 10px;
@@ -165,4 +177,44 @@ li {
 
 .footer-heading {
     margin: 5px 0;
+}
+
+
+/* END Footer section */
+
+@media screen and (max-width: 799px) and (min-width: 576px) {
+    .price-enterprise-col {
+        width: 100%;
+        float: left;
+    }
+    .price-free-col,
+    .price-pro-col {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .price-free-col,
+    .price-pro-col,
+    .price-enterprise-col {
+        width: 33.33%;
+        float: left;
+    }
+    .footer-column {
+        width: 25%;
+    }
+    .footer-column-span2 {
+        width: 50%;
+    }
+    .header-left,
+    .header-navigation {
+        width: 50%;
+    }
+    .header-navigation {
+        text-align: right;
+    }
+    .header-left {
+        text-align: left;
+    }
 }
