@@ -188,4 +188,7 @@ h1 {
     .title {
         border-bottom: 1px solid #ccc;
     }
+    .street-address {
+        display: none;
+    }
 }
