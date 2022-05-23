@@ -88,6 +88,7 @@
         text-align: center;
         padding: 0 25px;
         line-height: 1.4;
+        color: #807878;
     }
     
     .price-row {
@@ -177,6 +178,15 @@
     .footer-ul {
         float: left;
         width: 50%;
+    }
+    
+    .footer-ul li:nth-child(2),
+    li:nth-child(3),
+    li:nth-child(4),
+    li:nth-child(5),
+    li:nth-child(6),
+    li:nth-child(7) {
+        color: #807878;
     }
     
     .footer-heading {
