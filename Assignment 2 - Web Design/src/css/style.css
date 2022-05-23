@@ -30,6 +30,11 @@
         border-bottom: 1px solid #ccc;
     }
     
+    .footer,
+    .content {
+        padding: 10px;
+    }
+    
     .header-row::after,
     .price-row::after,
     .footer-row::after,
@@ -99,8 +104,6 @@
     
     .package {
         border: 1px solid #ccc;
-        /* min-width: 250px;
-    max-width: 450px; */
     }
     
     .pricing-header {
@@ -112,7 +115,6 @@
     
     .btn-free,
     .btn-priced {
-        padding: 10px;
         width: 100%;
         background-color: #fff;
         border-radius: 5px;
@@ -122,11 +124,14 @@
     .btn-free {
         border: 1px solid #237ABE;
         color: #237ABE;
+        padding: 10px;
     }
     
     .btn-priced {
         background-color: #007bff;
         color: white;
+        border: none;
+        padding: 11px;
     }
     
     .pricing-content {
