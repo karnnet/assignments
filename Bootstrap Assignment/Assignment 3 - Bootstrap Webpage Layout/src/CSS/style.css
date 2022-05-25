@@ -1,0 +1,15 @@
+.scroll-up {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: rgba(33, 37, 41, 0.8);
+    width: 30px;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+}
+
+
+/* .header .navbar-nav {
+    flex-direction: row;
+} */
