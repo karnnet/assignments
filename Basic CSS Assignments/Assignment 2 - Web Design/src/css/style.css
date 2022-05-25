@@ -88,7 +88,7 @@
         text-align: center;
         padding: 0 25px;
         line-height: 1.4;
-        color: #807878;
+        font-weight: 300;
     }
     
     .price-row {
@@ -152,7 +152,6 @@
     
     .price-month {
         font-size: 25px;
-        color: #807878;
     }
     /* END pricing section */
     /* START Footer section */
@@ -180,12 +179,11 @@
         width: 50%;
     }
     
-    .footer-ul li:nth-child(2),
-    li:nth-child(3),
-    li:nth-child(4),
-    li:nth-child(5),
-    li:nth-child(6),
-    li:nth-child(7) {
+    .light-color {
+        color: #807878 !important;
+    }
+    
+    .footer-row li:not(:first-child) {
         color: #807878;
     }
     
@@ -233,7 +231,7 @@
         }
         .content,
         .footer {
-            padding: 1% 15%;
+            padding: 10px 20%;
         }
         .pricing p {
             padding: 0 15%;
