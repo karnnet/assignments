@@ -9,20 +9,8 @@
     text-align: center;
 }
 
-.navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 a {
     text-decoration: none;
-}
-
-.header a {
-    flex-direction: row;
 }
 
 *,
@@ -31,7 +19,17 @@ a {
     box-sizing: border-box;
 }
 
+.thumbnail {
+    width: 60px;
+    height: 60px;
+}
 
-/* .header .navbar-nav {
-    flex-direction: row;
-} */
+.border-left-light {
+    border-left: 1px solid #ccc;
+}
+
+@media screen and (max-width:575px) {
+    .fluid-text {
+        text-align: center;
+    }
+}
