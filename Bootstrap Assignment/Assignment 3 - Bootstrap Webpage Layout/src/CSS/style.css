@@ -9,6 +9,28 @@
     text-align: center;
 }
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header a {
+    flex-direction: row;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
 
 /* .header .navbar-nav {
     flex-direction: row;
