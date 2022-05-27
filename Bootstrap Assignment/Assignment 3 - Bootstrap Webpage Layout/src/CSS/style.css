@@ -5,12 +5,15 @@
     background-color: rgba(33, 37, 41, 0.8);
     width: 30px;
     color: #fff;
-    height: 30px;
+    height: 26px;
     text-align: center;
 }
 
 .social-image {
-    background-color: rgba(33, 37, 41, 0.8);
+    background-color: #1A1E21;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 a {
@@ -52,6 +55,7 @@ a {
 
 .footer-legalinfo {
     background-color: black;
+    padding: 40px 0;
 }
 
 @media screen and (max-width:575px) {
