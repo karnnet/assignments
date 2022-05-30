@@ -12,13 +12,22 @@
     body {
         margin: 0;
     }
+    
+    .main-content,
+    .header,
+    .footer-dark,
+    .footer-light {
+        padding-left: 8% !important;
+        padding-right: 8% !important;
+    }
     /* START: header section */
     
     .header {
         width: 100%;
         background-color: #F1F1F1;
         height: 60px;
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     
     .header::after {
@@ -49,6 +58,11 @@
         color: #fff;
     }
     
+    .heading {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
     .header a {
         color: #000;
     }
@@ -57,9 +71,42 @@
         border-radius: 50%;
     }
     
+    .profile-img,
+    .profile-span {
+        float: left;
+        padding: 5px;
+    }
+    
+    .profile-span {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #000;
+    }
+    
     .card-img {
         width: 100%;
         height: auto;
+        margin-bottom: 20px;
+    }
+    
+    span {
+        color: #6c757d;
+        font-size: 12px;
+    }
+    
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    .navbar-nav li {
+        color: #ccc;
+        padding-top: 10px;
+    }
+    
+    .color-ccc {
+        color: #ccc !important;
     }
     
     .row {
@@ -77,6 +124,11 @@
         width: 100%;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    
+    .description-header {
+        color: #626A72;
+        margin-bottom: 5px;
     }
     
     .border-light {
@@ -103,6 +155,36 @@
         padding: 15px;
     }
     
+    .p-x-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .p-x-3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .p-x-4 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .p-y-4 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .p-y-10 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .m-y-1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
     .display-none {
         display: none;
     }
@@ -115,13 +197,27 @@
         text-align: center;
     }
     
+    ul {
+        padding: 0;
+    }
+    
     ul li {
         list-style-type: none;
     }
     
     .footer {
+        background-color: #212529!important;
+        color: #fff;
+    }
+    
+    .footer a {
+        color: #ccc;
+    }
+    
+    .footer-dark {
         background-color: #000;
-        color: white;
+        color: #fff;
+        padding: 20px 20px 50px 20px;
     }
     
     .social-image a {
