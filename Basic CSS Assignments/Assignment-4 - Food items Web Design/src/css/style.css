@@ -12,6 +12,7 @@
     .header {
         width: 100%;
         height: auto;
+        padding: 0 50px;
     }
     
     .header::after {
@@ -21,7 +22,7 @@
     }
     
     .header-logo {
-        width: 30%;
+        width: 25%;
     }
     
     .header-logo,
@@ -34,14 +35,14 @@
     }
     
     .header-navigation {
-        width: 70%;
+        width: 75%;
         text-align: right;
-        padding: 25px;
+        padding: 25px 10px;
     }
     
     .header-navigation a {
         color: #000;
-        padding: 40px;
+        padding: 20px;
     }
     
     .header-logo-img {
@@ -53,7 +54,7 @@
     .header-logo-img {
         float: left;
         text-align: center;
-        padding: 8px;
+        padding: 6px;
     }
     
     .logo-span {
@@ -92,6 +93,7 @@
         background-color: #ff373f;
         text-align: left;
         padding: 30px;
+        color: #fff;
     }
     
     .row {
@@ -103,6 +105,10 @@
         content: "";
         clear: both;
         display: table;
+    }
+    
+    h2 {
+        font-weight: 400;
     }
     
     .Recipes-menu,
@@ -140,10 +146,27 @@
         text-align: center;
     }
     
+    .rounded-checkbox {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        vertical-align: middle;
+        outline: none;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+    }
+    
+    .rounded-checkbox:checked {
+        appearance: auto;
+        clip-path: circle(50% at 50% 50%);
+        background-color: #fff;
+    }
+    
     .food-nationality-col,
     .food-type-col {
         float: left;
-        padding: 15px;
         color: #fff;
     }
     
@@ -158,7 +181,7 @@
     
     .country-dish {
         float: left;
-        padding-right: 200px;
+        width: 30%;
     }
     
     .recipes-detail-col {

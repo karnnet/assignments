@@ -111,6 +111,7 @@
     
     .row {
         padding: 5px;
+display:flex;
     }
     
     .row::after {
