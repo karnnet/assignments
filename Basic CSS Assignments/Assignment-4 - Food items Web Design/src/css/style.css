@@ -150,8 +150,11 @@
         border-radius: 5px;
     }
     
-    .filter-column-left,
-    .filter-column-right {
+    .Recipes-menu {
+        padding: 5px 60px;
+    }
+    
+    .filter-column-left {
         float: left;
         padding: 10px;
     }
@@ -163,7 +166,19 @@
     
     .filter-column-right {
         width: 80%;
+        float: left;
         background-color: #f6f6f6;
+        padding: 10px 0 10px 10px;
+    }
+    
+    .filter-span-right {
+        float: right;
+    }
+    
+    .filter-span-left,
+    .filter-span-right {
+        font-size: 15px;
+        color: #fff;
     }
     
     .sort-left {
@@ -232,6 +247,11 @@
         padding: 0 10px;
     }
     
+    .recipes-detail-col p {
+        color: #505050;
+        font-size: 20px;
+    }
+    
     .recipes-detail-card {
         padding: 10px;
         background-color: #fff;
@@ -243,10 +263,14 @@
     
     .align-left {
         float: left;
+        font-size: 12px;
+        color: #6e6e6e;
     }
     
     .align-right {
         float: right;
+        font-size: 12px;
+        color: #6e6e6e;
     }
     
     .recipe-img {
@@ -320,4 +344,5 @@
     .footer-col {
         float: left;
         width: 20%;
+        padding: 5px;
     }
