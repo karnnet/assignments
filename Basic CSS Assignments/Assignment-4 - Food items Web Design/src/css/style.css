@@ -50,6 +50,14 @@
         height: 65px;
     }
     
+    .span-sort {
+        padding: 10px;
+    }
+    
+    .food-sort {
+        padding: 50px 0;
+    }
+    
     .logo-span,
     .header-logo-img {
         float: left;
@@ -124,7 +132,7 @@
     .filter-column-left,
     .filter-column-right {
         float: left;
-        padding: 15px;
+        padding: 25px;
     }
     
     .filter-column-left {
@@ -168,6 +176,7 @@
     .food-type-col {
         float: left;
         color: #fff;
+        padding: 25px;
     }
     
     .food-type-col {
@@ -189,6 +198,22 @@
         background-color: #fff;
         float: left;
         margin-bottom: 20px;
+    }
+    
+    .recipes-detail-card {
+        padding: 10px;
+    }
+    
+    .recipes-detail-card p {
+        padding-top: 20px;
+    }
+    
+    .date {
+        float: left;
+    }
+    
+    .item {
+        float: right;
     }
     
     .recipe-img {
@@ -214,6 +239,11 @@
         width: 60%;
     }
     
+    .center {
+        padding: 20px 0;
+        text-align: center;
+    }
+    
     input[type=text]:focus,
     input[type=email]:focus {
         outline: none;
@@ -229,7 +259,8 @@
         padding: 10px;
         width: 40%;
         color: #fff;
-        text-align: center
+        text-align: center;
+        border: 1px solid white;
     }
     
     .footer {
