@@ -127,12 +127,13 @@
     
     .Recipes-type {
         background-color: #FF4A52;
+        border-radius: 5px;
     }
     
     .filter-column-left,
     .filter-column-right {
         float: left;
-        padding: 25px;
+        padding: 10px;
     }
     
     .filter-column-left {
@@ -180,16 +181,21 @@
     .food-type-col {
         float: left;
         color: #fff;
-        padding: 25px;
+        padding: 15px;
     }
     
     .food-type-col {
         width: 20%;
     }
     
+    .food-type-col span {
+        padding: 5px;
+    }
+    
     .food-nationality-col {
         width: 80%;
         border-left: 1px solid white;
+        border-left-width: 20%;
     }
     
     .country-dish {
@@ -199,24 +205,25 @@
     
     .recipes-detail-col {
         width: 25%;
-        background-color: #fff;
         float: left;
         margin-bottom: 20px;
+        padding: 0 10px;
     }
     
     .recipes-detail-card {
         padding: 10px;
+        background-color: #fff;
     }
     
     .recipes-detail-card p {
         padding-top: 20px;
     }
     
-    .date {
+    .align-left {
         float: left;
     }
     
-    .item {
+    .align-right {
         float: right;
     }
     
