@@ -361,8 +361,8 @@
     }
     
     .btn-send {
-        width: 120px;
         border: none;
+        padding: 15px 55px !important;
     }
     
     .label-signup {
