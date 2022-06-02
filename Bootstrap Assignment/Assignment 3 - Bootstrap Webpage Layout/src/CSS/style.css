@@ -1,17 +1,13 @@
 .scroll-up {
-    position: fixed;
     right: 15px;
     bottom: 15px;
     background-color: rgba(33, 37, 41, 0.8);
     width: 30px;
-    color: #fff;
     height: 26px;
-    text-align: center;
 }
 
 .social-image {
     background-color: #1A1E21;
-    border-radius: 50%;
     width: 40px;
     height: 40px;
 }
@@ -45,8 +41,6 @@ a {
 }
 
 .vertical-center {
-    width: 100%;
-    margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -54,7 +48,7 @@ a {
 }
 
 .footer-legalinfo {
-    background-color: black;
+    background-color: #000;
     padding: 40px 0;
 }
 
