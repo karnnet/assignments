@@ -8,6 +8,9 @@
     <title>The Grilled Prawn</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/779cd477c8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,36 +37,36 @@
         <div class="main-content">
             <!-- banner section -->
             <div class="banner">
-                <div class="row">
+                <div style="height:500px" class="row">
                     <div class="banner-image">
                         <img class="banner-img" src="Images/banner.jpg">
                     </div>
                     <div class="banner-text">
-                        <p>LATEST RECEIPE</p>
+                        <h3>LATEST RECEIPE</h3>
                         <h1>Baked Polenta with Cheese and Mushrooms.</h1>
-                        <p>Polenta,goat cheese,Italian sausage and cremini mushrooms. All together this will make for pretty darn good side dish to a lovely salad.Go for it</p>
-                        <button class="btn border-none">Go to receipe <i class="fa fa-arrow-right"></i></button>
+                        <p>Polenta, goat cheese, Italian sausage and cremini mushrooms. All together this will make for pretty darn good side dish to a lovely salad. Go for it.</p>
+                        <button class="btn border-none">Go to receipe <i class="padding-x fa fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
 
             <div class="Recipes-menu">
                 <div class="Recipes-head">
-                    <h2>Our Recipes</h2>
+                    <h1>Our Recipes</h1>
                 </div>
                 <div class="Recipes-type">
                     <div class="row">
                         <div class="filter-column-left">
                             <span class="filter-span-left">Filter recipes by</span>
-                            <span class="filter-span-right">-</span>
+                            <span class="filter-span-right"><i class="fa fa-minus"></i></span>
                         </div>
                         <div class="filter-column-right">
                             <div class="sort-left">
                                 <span class="span-sort">Sort by</span>
-                                <button class="btn">Newest first <i class="fa fa-angle-down"></i></button>
+                                <button class="btn">Newest first <i class="padding-x fa fa-angle-down"></i></button>
                             </div>
                             <div class="search">
-                                <i class="fa fa-search"></i><span> Search recipe</span>
+                                <i class="padding-x fa fa-search"></i><span> Search recipe</span>
                             </div>
                         </div>
                     </div>
@@ -80,37 +83,39 @@
                             <label for="special ocassions"> Special ocassions</label>
                         </div>
                         <div class="food-nationality-col">
-                            <span>Nationality:</span><br>
-                            <div class="row">
-                                <div class="country-dish">
-                                    <input class="rounded-checkbox" type="checkbox" id="italian" name="italian">
-                                    <label for="italian"> Italian(34)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="french" name="french">
-                                    <label for="french"> French(30)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="spanish" name="spanish">
-                                    <label for="spanish"> Spanish(22)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="peruvian" name="peruvian">
-                                    <label for="peruvian"> Peruvian(3)</label>
-                                </div>
-                                <div class="country-dish">
-                                    <input class="rounded-checkbox" type="checkbox" id="chinese" name="chinese">
-                                    <label for="italian"> Chinese(18)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="indian" name="indian">
-                                    <label for="french"> Indian(13)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="thai" name="thai">
-                                    <label for="spanish"> Thai(10)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="norwegian" name="norwegian">
-                                    <label for="peruvian"> Norwegian(4)</label>
-                                </div>
-                                <div class="country-dish">
-                                    <input class="rounded-checkbox" type="checkbox" id="polish" name="polish">
-                                    <label for="italian"> Polish(2)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="danish" name="danish">
-                                    <label for="french"> Danish(3)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="belgian" name="belgian">
-                                    <label for="spanish"> Belgian(7)</label><br>
-                                    <input class="rounded-checkbox" type="checkbox" id="persian" name="persian">
-                                    <label for="peruvian"> Persian(13)</label>
+                            <div class="border-left">
+                                <span>Nationality:</span>
+                                <div class="row">
+                                    <div class="country-dish">
+                                        <input class="rounded-checkbox" type="checkbox" id="italian" name="italian">
+                                        <label for="italian"> Italian(34)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="french" name="french">
+                                        <label for="french"> French(30)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="spanish" name="spanish">
+                                        <label for="spanish"> Spanish(22)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="peruvian" name="peruvian">
+                                        <label for="peruvian"> Peruvian(3)</label>
+                                    </div>
+                                    <div class="country-dish b-none">
+                                        <input class="rounded-checkbox" type="checkbox" id="chinese" name="chinese">
+                                        <label for="italian"> Chinese(18)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="indian" name="indian">
+                                        <label for="french"> Indian(13)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="thai" name="thai">
+                                        <label for="spanish"> Thai(10)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="norwegian" name="norwegian">
+                                        <label for="peruvian"> Norwegian(4)</label>
+                                    </div>
+                                    <div class="country-dish b-none">
+                                        <input class="rounded-checkbox" type="checkbox" id="polish" name="polish">
+                                        <label for="italian"> Polish(2)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="danish" name="danish">
+                                        <label for="french"> Danish(3)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="belgian" name="belgian">
+                                        <label for="spanish"> Belgian(7)</label><br>
+                                        <input class="rounded-checkbox" type="checkbox" id="persian" name="persian">
+                                        <label for="peruvian"> Persian(13)</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -249,16 +254,16 @@
                     <div class="form-remove-row">
                         <div class="sign-up-col">
                             <label class="label-signup" for="Name">Name</label>
-                            <input type="text" placeholder="Enter Name" name="name" id="Name" required>
+                            <input type="text" placeholder="Enter Name" name="name" id="Name" value="Samantha" required>
                         </div>
                         <div class="sign-up-col">
                             <label class="label-signup" for="Surname">Surname</label>
-                            <input type="text" placeholder="Enter Surname" name="surname" id="Surname" required>
+                            <input type="text" placeholder="Enter Surname" name="surname" id="Surname" value="Smith" required>
                         </div>
 
                         <div class="sign-up-col">
                             <label class="label-signup" for="Name">Email address</label>
-                            <input type="email" placeholder="Enter Email" name="email" id="Email" required>
+                            <input type="email" placeholder="Enter Email" name="email" id="Email" value="Samantha@smith.com" required>
                         </div>
                         <div class="sign-up-col center">
                             <i class="margin-top fa fa-trash-can"></i><label> Remove</label>
@@ -267,48 +272,53 @@
                     <div class="form-add-row">
                         <div class="sign-up-col">
                             <label class="label-signup" for="Name">Name</label>
-                            <input type="text" placeholder="Enter Name" name="name" id="Name" required></div>
+                            <input type="text" placeholder="Enter Name" name="name" id="Name" value="George" required></div>
 
                         <div class="sign-up-col">
                             <label class="label-signup" for="Surname">Surname</label>
-                            <input type="text" placeholder="Enter Surname" name="surname" id="Surname" required>
+                            <input type="text" placeholder="Enter Surname" name="surname" id="Surname" value="Stone" required>
                         </div>
 
                         <div class="sign-up-col">
                             <label class="label-signup" for="Name">Email address</label>
-                            <input type="email" placeholder="Enter Email" name="email" id="Email" required>
+                            <input type="email" placeholder="Enter Email" name="email" id="Email" value="george.stone@gmail.com" required>
                         </div>
                         <div class="sign-up-col center">
-                            <button class="margin-top btn-sign-up">Add Friend</button>
+                            <button class="margin-top btn btn-sign-up">Add Friend</button>
                         </div>
                     </div>
                     <div class="button-send">
-                        <button class="btn btn-send">Send   <i class="fa fa-arrow-right"></i></button>
+                        <button class="btn btn-send">Send <i class="padding-x fa fa-arrow-right"></i></button>
                     </div>
                 </form>
             </div>
             <!-- footer section -->
             <div class="footer">
                 <div class="row">
-                    <div class="footer-col">Our Recipes
+                    <div class="footer-col">
+                        <h4>Our Recipes</h4>
                         <p>All our reipes are tested throughly by us to make sure they're suitable for your kitchen at home. We may know many of you are concerned about healthy eating, so we send them to a qualified nutritionist for thjrough analysis too.
                         </p>
                     </div>
-                    <div class="footer-col">Grilled Praw's History
+                    <div class="footer-col">
+                        <h4>Grilled Praw's History</h4>
                         <p>The Grilled prawn is a fictional food blog created in january 2015.
                         </p>
                     </div>
-                    <div class="footer-col">Tips and Tricks
+                    <div class="footer-col">
+                        <h4>Tips and Tricks</h4>
                         <p>Not sure how to do something? Don't panic. We have plenty of tutorials for you.
                         </p>
                         <p class="footer-para">Learn more</p>
                     </div>
-                    <div class="footer-col">Help and Contact
+                    <div class="footer-col">
+                        <h4>Help and Contact</h4>
                         <p>Struggling with one of the recipes?
                         </p>
                         <p class="footer-para">Send us an email</p>
                     </div>
-                    <div class="footer-col"><i class="fa fa-copyright"></i> The Grilled Prawn
+                    <div class="footer-col">
+                        <h4><i class="fa fa-copyright"></i> The Grilled Prawn</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime sunt neque nisi, et expedita porro tempora aliquid facere eveniet accusantium ab voluptate ipsum quisquam quae dolores deleniti eos autem!
                         </p>
                     </div>
