@@ -50,7 +50,7 @@
     }
     
     .header-navigation a {
-        color: #000;
+        color: #6e6e6e;
         padding: 20px;
     }
     
@@ -73,8 +73,11 @@
     .logo-span,
     .header-logo-img {
         float: left;
-        text-align: center;
         padding: 6px;
+    }
+    
+    .text-align-c {
+        text-align: center;
     }
     
     .logo-span {
@@ -86,7 +89,6 @@
     
     .btn {
         padding: 15px 25px;
-        text-align: center;
         background-color: #fff;
         border-radius: 5px;
         font-size: 15px;
@@ -98,13 +100,10 @@
     }
     
     h1 {
-        font-size: 35px;
+        font-size: 30px;
         margin-top: 20px;
         font-weight: 600;
-    }
-    
-    h2 {
-        font-weight: 400;
+        color: #6e6e6e;
     }
     
     h3 {
@@ -112,7 +111,11 @@
     }
     
     h4 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    
+    .color-white {
+        color: #fff;
     }
     
     .b-none {
@@ -130,7 +133,7 @@
     }
     
     .banner-image {
-        width: 80%;
+        width: 75%;
         height: inherit;
     }
     
@@ -141,7 +144,7 @@
     }
     
     .banner-text {
-        width: 20%;
+        width: 25%;
         height: inherit;
         background-color: #EA474C;
         text-align: left;
@@ -184,9 +187,6 @@
     .filter-column-left {
         float: left;
         padding: 10px;
-    }
-    
-    .filter-column-left {
         width: 24%;
         color: #fff;
     }
@@ -220,12 +220,12 @@
     
     .search {
         float: right;
-        text-align: center;
     }
     
     .rounded-checkbox {
         width: 15px;
         height: 15px;
+        padding: 10px;
         border-radius: 50%;
         vertical-align: middle;
         outline: none;
@@ -242,7 +242,7 @@
     .rounded-checkbox:checked {
         appearance: auto;
         clip-path: circle(50% at 50% 50%);
-        background-color: #fff;
+        background-color: #000;
     }
     
     .food-nationality-col,
@@ -284,7 +284,7 @@
     
     .recipes-detail-col p {
         color: #505050;
-        font-size: 25px;
+        font-size: 20px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -292,7 +292,7 @@
     .recipes-detail-card {
         padding: 15px;
         background-color: #fff;
-        height: 35%;
+        height: 45%;
     }
     
     .align-left {
@@ -314,6 +314,7 @@
     
     .return-top {
         color: red;
+        padding: 12px;
     }
     
     .recipe-feedback {
@@ -333,7 +334,6 @@
     
     .center {
         padding: 20px 0;
-        text-align: center;
     }
     
     input[type=text]:focus,
@@ -351,13 +351,11 @@
         padding: 15px;
         width: 40%;
         color: #fff;
-        text-align: center;
         border: 1px solid white;
     }
     
     .button-send {
         padding: 20px 10px;
-        text-align: center;
     }
     
     .btn-send {
@@ -403,6 +401,7 @@
         float: left;
         width: 20%;
         padding: 5px;
+        color: #6e6e6e;
     }
     
     .footer-para {
