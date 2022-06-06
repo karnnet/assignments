@@ -17,8 +17,8 @@
     .header,
     .footer-dark,
     .footer-light {
-        padding-left: 8% !important;
-        padding-right: 8% !important;
+        padding-left: 7% !important;
+        padding-right: 7% !important;
     }
     /* START: header section */
     
@@ -59,16 +59,22 @@
     }
     
     .heading {
-        font-size: 25px;
         font-weight: bold;
+        margin: 0;
+        font-size: 28px;
     }
     
     .header a {
         color: #000;
+        padding: 0 3px;
     }
     
     .profile-img {
         border-radius: 50%;
+    }
+    
+    .center {
+        padding: 12px 0;
     }
     
     .profile-img,
@@ -79,7 +85,6 @@
     
     .profile-span {
         font-size: 15px;
-        text-align: center;
         margin-top: 15px;
         color: #000;
     }
@@ -110,8 +115,9 @@
     }
     
     .row {
-        padding: 5px;
-display:flex;
+        /* padding: 5px; */
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .row::after {
@@ -169,6 +175,10 @@ display:flex;
     .p-x-4 {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    
+    .p-bottom {
+        padding-bottom: 30px;
     }
     
     .p-y-4 {
@@ -237,7 +247,6 @@ display:flex;
         width: 30px;
         color: #fff;
         height: 26px;
-        text-align: center;
     }
     
     @media only screen and (max-width: 768px) {
@@ -262,6 +271,9 @@ display:flex;
         .footer-left,
         .footer-right {
             text-align: center;
+        }
+        .trending {
+            padding: 35px 0;
         }
     }
     
