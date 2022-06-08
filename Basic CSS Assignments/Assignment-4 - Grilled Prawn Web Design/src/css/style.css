@@ -14,6 +14,10 @@
         padding: 0 5px;
     }
     
+    .padding-y {
+        padding: 20px 0;
+    }
+    
     .backcolor-white {
         background-color: #fff;
     }
@@ -22,51 +26,46 @@
         color: #6e6e6e;
     }
     
-    .header {
-        width: 100%;
-        height: auto;
-        padding: 0 50px;
-    }
-    
-    .header::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    
-    .header-logo {
+    .w-25 {
         width: 25%;
     }
     
-    .header-logo,
-    .header-navigation {
-        float: left;
+    .w-75 {
+        width: 75%;
     }
     
-    .header-navigation a {
-        color: #4a4a4a;
+    .w-100 {
+        width: 100%;
     }
     
-    a {
+    .text-none {
         text-decoration: none;
     }
     
+    header {
+        width: 100%;
+        height: auto;
+    }
+    
+    .header-logo {
+        position: relative;
+    }
+    
     .header-navigation {
-        width: 75%;
         text-align: right;
-        padding: 25px 10px;
+        padding: 25px 40px;
     }
     
     .header-navigation a {
         color: #6e6e6e;
+        text-decoration: none;
         padding: 20px;
     }
     
     .header-logo-img {
         height: 80px;
         position: absolute;
-        left: 5%;
-        width: 6%;
+        left: 60px;
         border-radius: 100%;
     }
     
@@ -85,7 +84,6 @@
     
     .logo-span,
     .header-logo-img {
-        float: left;
         padding: 6px;
     }
     
@@ -94,10 +92,9 @@
     }
     
     .logo-span {
-        position: absolute;
-        left: 12%;
-        top: 2%;
         color: #fa5650;
+        left: 10%;
+        top: 2%;
     }
     
     .btn {
@@ -105,6 +102,7 @@
         border-radius: 5px;
         font-size: 15px;
         color: #5e5e5e;
+        cursor: pointer;
     }
     
     .border-none {
@@ -134,28 +132,19 @@
     }
     
     .banner {
-        width: 100%;
         height: 100%;
     }
     
-    .banner-image,
-    .banner-text {
-        float: left;
-    }
-    
     .banner-image {
-        width: 75%;
         height: inherit;
     }
     
     .banner-img {
-        width: 100%;
         height: 100%;
         object-fit: cover;
     }
     
     .banner-text {
-        width: 25%;
         height: inherit;
         background-color: #EA474C;
         text-align: left;
@@ -171,12 +160,6 @@
     .row {
         display: flex;
         flex-wrap: wrap;
-    }
-    
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
     }
     
     .Recipes-menu,
@@ -195,14 +178,12 @@
     }
     
     .filter-column-left {
-        float: left;
         padding: 10px;
         width: 24%;
     }
     
     .filter-column-right {
         width: 76%;
-        float: left;
         background-color: #f6f6f6;
         padding: 10px 0 10px 10px;
     }
@@ -297,11 +278,6 @@
         transform: rotate(45deg);
     }
     
-    .food-nationality-col,
-    .food-type-col {
-        float: left;
-    }
-    
     .food-type-col {
         width: 24%;
         padding: 15px;
@@ -325,20 +301,18 @@
     }
     
     .country-dish {
-        float: left;
         width: 33.33%;
     }
     
     .recipes-detail-col {
-        width: 25%;
-        float: left;
         margin-bottom: 20px;
         padding: 0 15px;
     }
     
-    .recipes-detail-col p {
+    .recipes-detail-col h2 {
         color: #505050;
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: 300;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -362,7 +336,6 @@
     }
     
     .recipe-img {
-        width: 100%;
         height: inherit;
     }
     
@@ -392,11 +365,6 @@
     input[type=text]:focus,
     input[type=email]:focus {
         outline: none;
-    }
-    
-    .sign-up-col {
-        float: left;
-        width: 25%;
     }
     
     .btn-sign-up {
@@ -431,31 +399,24 @@
     .form-remove-row,
     .form-add-row {
         padding: 20px 0;
+        display: flex;
     }
     
     .form-remove-row {
         border-bottom: 1px solid #fff;
     }
     
-    .form-remove-row::after,
-    .form-add-row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    
-    .footer {
+    footer {
         background-color: #fff;
         padding: 50px;
     }
     
     .footer-col {
-        float: left;
         width: 20%;
         padding: 5px;
         color: #6e6e6e;
     }
     
     .footer-para {
-        color: red;
+        color: #ff0000;
     }

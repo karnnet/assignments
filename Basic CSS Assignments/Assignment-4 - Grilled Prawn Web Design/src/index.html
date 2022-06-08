@@ -14,351 +14,356 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- header section -->
-        <div class="header">
-            <div class="row">
-                <div class="header-logo">
-                    <img class="header-logo-img text-align-c" src="Images/prawn-logo.jpg">
-                    <p class="logo-span text-align-c">The Grilled Prawn</p>
+    <!-- <div class="container"> -->
+    <!-- header section -->
+    <header>
+        <div class="row">
+            <div class="header-logo w-25">
+                <img class="header-logo-img" src="Images/prawn-logo.jpg">
+                <p class="logo-span text-align-c">The Grilled Prawn</p>
 
+            </div>
+            <div class="header-navigation w-75">
+                <a href="#recipes">RECIPES</a>
+                <a href="#">DRINKS</a>
+                <a href="#">DECORATIONS</a>
+                <a href="#grilled-detail">ABOUT THE GRILLED PRAWN</a>
+
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- main section  -->
+    <main>
+        <!-- banner section -->
+        <div class="banner w-100">
+            <div style="height:500px" class="row">
+                <div class="banner-image w-75">
+                    <img class="banner-img w-100" src="Images/banner.jpg">
                 </div>
-                <div class="header-navigation">
-                    <a href="#">RECIPES</a>
-                    <a href="#">DRINKS</a>
-                    <a href="#">DECORATIONS</a>
-                    <a href="#">ABOUT THE GRILLED PRAWN</a>
-
+                <div class="banner-text w-25 color-white">
+                    <h3>LATEST RECEIPE</h3>
+                    <h1 class="color-white color-grey">Baked Polenta with Cheese and Mushrooms.</h1>
+                    <p>Polenta, goat cheese, Italian sausage and cremini mushrooms. All together this will make for pretty darn good side dish to a lovely salad. Go for it.</p>
+                    <button class="btn text-align-c border-none backcolor-white">Go to receipe <i class="padding-x fa fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
-        <!-- end of header -->
-        <!-- main section  -->
-        <div class="main-content">
-            <!-- banner section -->
-            <div class="banner">
-                <div style="height:500px" class="row">
-                    <div class="banner-image">
-                        <img class="banner-img" src="Images/banner.jpg">
-                    </div>
-                    <div class="banner-text color-white">
-                        <h3>LATEST RECEIPE</h3>
-                        <h1 class="color-white color-grey">Baked Polenta with Cheese and Mushrooms.</h1>
-                        <p>Polenta, goat cheese, Italian sausage and cremini mushrooms. All together this will make for pretty darn good side dish to a lovely salad. Go for it.</p>
-                        <button class="btn text-align-c border-none backcolor-white">Go to receipe <i class="padding-x fa fa-arrow-right"></i></button>
-                    </div>
-                </div>
+        <!-- End of banner section -->
+        <!-- Recipe section -->
+        <div id="recipes" class="Recipes-menu">
+            <div class="Recipes-head">
+                <h1 class="color-grey">Our Recipes</h1>
             </div>
-            <div class="Recipes-menu">
-                <div class="Recipes-head">
-                    <h1 class="color-grey">Our Recipes</h1>
-                </div>
-                <div class="Recipes-type">
-                    <div class="row">
-                        <div class="filter-column-left color-white">
-                            <span class="filter-span-left">Filter recipes by</span>
-                            <span class="filter-span-right"><i class="fa fa-minus"></i></span>
+            <div class="Recipes-type">
+                <div class="row">
+                    <div class="filter-column-left color-white">
+                        <span class="filter-span-left">Filter recipes by</span>
+                        <span class="filter-span-right"><i class="fa fa-minus"></i></span>
+                    </div>
+                    <div class="filter-column-right">
+                        <div class="sort-left">
+                            <span class="span-sort">Sort by</span>
+                            <button class="btn text-align-c backcolor-white">Newest first <i class="padding-x fa fa-angle-down"></i></button>
                         </div>
-                        <div class="filter-column-right">
-                            <div class="sort-left">
-                                <span class="span-sort">Sort by</span>
-                                <button class="btn text-align-c backcolor-white">Newest first <i class="padding-x fa fa-angle-down"></i></button>
-                            </div>
-                            <div class="search text-align-c">
-                                <i class="padding-x fa fa-search"></i><span class="span-search"> Search recipe</span>
-                            </div>
+                        <div class="search text-align-c">
+                            <i class="padding-x fa fa-search"></i><span class="span-search"> Search recipe</span>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="food-type-col color-white">
-                            <span class="span-p">Food type:</span>
-                            <label class="container1">Appetisers
+                </div>
+                <div class="row">
+                    <div class="food-type-col color-white">
+                        <span class="span-p">Food type:</span>
+                        <label class="container1">Appetisers
                                     <input type="checkbox" unchecked>
                                     <span class="checkmark"></span>
                                   </label>
-                            <label class="container1">Mains
+                        <label class="container1">Mains
                                         <input type="checkbox" unchecked>
                                         <span class="checkmark"></span>
                                       </label>
-                            <label class="container1">Desserts
+                        <label class="container1">Desserts
                                             <input type="checkbox" unchecked>
                                             <span class="checkmark"></span>
                                           </label>
-                            <label class="container1">Special Ocassion
+                        <label class="container1">Special Ocassion
                                                 <input type="checkbox" unchecked>
                                                 <span class="checkmark"></span>
                                               </label>
-                        </div>
-                        <div class="food-nationality-col color-white">
-                            <div class="border-left">
-                                <span class="span-p">Nationality:</span>
-                                <div class="row">
-                                    <div class="country-dish">
-                                        <label class="container1">Italian(34)
+                    </div>
+                    <div class="food-nationality-col color-white">
+                        <div class="border-left">
+                            <span class="span-p">Nationality:</span>
+                            <div class="row">
+                                <div class="country-dish">
+                                    <label class="container1">Italian(34)
                                                     <input type="checkbox" unchecked>
                                                     <span class="checkmark"></span>
                                                   </label>
-                                        <label class="container1">French(30)
+                                    <label class="container1">French(30)
                                                         <input type="checkbox" unchecked>
                                                         <span class="checkmark"></span>
                                                       </label>
-                                        <label class="container1">Spanish(22)
+                                    <label class="container1">Spanish(22)
                                                             <input type="checkbox" unchecked>
                                                             <span class="checkmark"></span>
                                                           </label>
-                                        <label class="container1">Peruvian(3)
+                                    <label class="container1">Peruvian(3)
                                                                 <input type="checkbox" unchecked>
                                                                 <span class="checkmark"></span>
                                                               </label>
-                                    </div>
-                                    <div class="country-dish b-none">
-                                        <label class="container1">Chinese(18)
+                                </div>
+                                <div class="country-dish b-none">
+                                    <label class="container1">Chinese(18)
                                                     <input type="checkbox" unchecked>
                                                     <span class="checkmark"></span>
                                                   </label>
-                                        <label class="container1">Indian(13)
+                                    <label class="container1">Indian(13)
                                                         <input type="checkbox" unchecked>
                                                         <span class="checkmark"></span>
                                                       </label>
-                                        <label class="container1">Thai(10
+                                    <label class="container1">Thai(10
                                                             <input type="checkbox" unchecked>
                                                             <span class="checkmark"></span>
                                                           </label>
-                                        <label class="container1">Norwegian(4)
+                                    <label class="container1">Norwegian(4)
                                                                 <input type="checkbox" unchecked>
                                                                 <span class="checkmark"></span>
                                                               </label>
-                                    </div>
-                                    <div class="country-dish b-none">
-                                        <label class="container1">Polish(2)
+                                </div>
+                                <div class="country-dish b-none">
+                                    <label class="container1">Polish(2)
                                                     <input type="checkbox" unchecked>
                                                     <span class="checkmark"></span>
                                                   </label>
-                                        <label class="container1">Danish(3)
+                                    <label class="container1">Danish(3)
                                                         <input type="checkbox" unchecked>
                                                         <span class="checkmark"></span>
                                                       </label>
-                                        <label class="container1">Belgian(7)
+                                    <label class="container1">Belgian(7)
                                                             <input type="checkbox" unchecked>
                                                             <span class="checkmark"></span>
                                                           </label>
-                                        <label class="container1">Persian(13)
+                                    <label class="container1">Persian(13)
                                                                 <input type="checkbox" unchecked>
                                                                 <span class="checkmark"></span>
                                                               </label>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="recipes-detail">
-                <div class="row">
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">5th MARCH 2016</span>
-                            <span class="align-right">THAI</span>
-                            <p>Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/apple.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">17th MARCH 2016</span>
-                            <span class="align-right">ITALIAN</span>
-                            <p>Cappellini with Cherry Tomatoes and Fresh basil</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/banner.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">4th APRIL 2016</span>
-                            <span class="align-right">ITALIAN</span>
-                            <p>Baked Turkey Sausage and Mascarpone Stuffed Shells</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/bread.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">24th MAY 2016</span>
-                            <span class="align-right">ITALIAN</span>
-                            <p>Caramelised Aplle and Herb Fiocchi</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/burger.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">25th MAY 2016</span>
-                            <span class="align-right">SPANISH</span>
-                            <p>Pumpkin Beer Cheese Soup</p>
-                        </div>
-                        <img class="recipe-img" src="Images/chicken.jpg" alt="">
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">22th SEPTEMBER 2016</span>
-                            <span class="align-right">THAI</span>
-                            <p>Yum Woon Sen with Shrimp(Glass noodle salad with Shrimp)</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/chips.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">14th OCTOBER 2016</span>
-                            <span class="align-right">THAI</span>
-                            <p>Beef Satays</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/cookies.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">29th OCTOBER 2016</span>
-                            <span class="align-right">FRENCH</span>
-                            <p>Creamy French Onion Soup Dip in a Bread Bowl</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/curry.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">11th NOVEMBER 2016</span>
-                            <span class="align-right">SPANISH</span>
-                            <p>Bocadillo Bites</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/egg.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">12th NOVEMBER 2016</span>
-                            <span class="align-right">SPANISH</span>
-                            <p>Paella</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/greenveg.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">24th DECEMBER 2016</span>
-                            <span class="align-right">THAI</span>
-                            <p>Sipcy black Bean Burger</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/museli.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="recipes-detail-col">
-                        <div class="recipes-detail-card">
-                            <span class="align-left">9th JANUARY 2017</span>
-                            <span class="align-right">ITALIAN</span>
-                            <p>Fresh Fig and Pistachio Salad</p>
-                        </div>
-                        <div class="recipe-variation">
-                            <img class="recipe-img" src="Images/noodle.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="return-top">Return to the top <i class="padding-x fa fa-angle-up"></i></a>
-            </div>
-            <div class="recipe-feedback color-white">
-                <div class="sign-up">
-                    <h1 class="color-white color-grey">Spread the world !</h1>
-                    <p>Our recipes are awesome, sign up to our newsletter<br> and invite friends to join the Grilled Prawn cult</p>
-                </div>
-                <form action="">
-                    <div class="form-remove-row">
-                        <div class="sign-up-col">
-                            <label class="label-signup" for="Name">Name</label>
-                            <input type="text" placeholder="Enter Name" name="name" id="Name" value="Samantha" required>
-                        </div>
-                        <div class="sign-up-col">
-                            <label class="label-signup" for="Surname">Surname</label>
-                            <input type="text" placeholder="Enter Surname" name="surname" id="Surname" value="Smith" required>
-                        </div>
-
-                        <div class="sign-up-col">
-                            <label class="label-signup" for="Name">Email address</label>
-                            <input type="email" placeholder="Enter Email" name="email" id="Email" value="Samantha@smith.com" required>
-                        </div>
-                        <div class="sign-up-col center text-align-c">
-                            <i class="margin-top fa fa-trash-can"></i><label> Remove</label>
-                        </div>
-                    </div>
-                    <div class="form-add-row">
-                        <div class="sign-up-col">
-                            <label class="label-signup" for="Name">Name</label>
-                            <input type="text" placeholder="Enter Name" name="name" id="Name" value="George" required></div>
-
-                        <div class="sign-up-col">
-                            <label class="label-signup" for="Surname">Surname</label>
-                            <input type="text" placeholder="Enter Surname" name="surname" id="Surname" value="Stone" required>
-                        </div>
-
-                        <div class="sign-up-col">
-                            <label class="label-signup" for="Name">Email address</label>
-                            <input type="email" placeholder="Enter Email" name="email" id="Email" value="george.stone@gmail.com" required>
-                        </div>
-                        <div class="sign-up-col center text-align-c">
-                            <button class="margin-top btn btn-sign-up text-align-c backcolor-white color-white">Add Friend</button>
-                        </div>
-                    </div>
-                    <div class="button-send text-align-c">
-                        <button class="btn btn-send backcolor-white">Send <i class="padding-x fa fa-arrow-right"></i></button>
-                    </div>
-                </form>
-            </div>
-            <!-- footer section -->
-            <div class="footer">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Our Recipes</h4>
-                        <p>All our reipes are tested throughly by us to make sure they're suitable for your kitchen at home. We may know many of you are concerned about healthy eating, so we send them to a qualified nutritionist for thjrough analysis too.
-                        </p>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Grilled Praw's History</h4>
-                        <p>The Grilled prawn is a fictional food blog created in january 2015.
-                        </p>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Tips and Tricks</h4>
-                        <p>Not sure how to do something? Don't panic. We have plenty of tutorials for you.
-                        </p>
-                        <p class="footer-para">Learn more</p>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Help and Contact</h4>
-                        <p>Struggling with one of the recipes?
-                        </p>
-                        <p class="footer-para">Send us an email</p>
-                    </div>
-                    <div class="footer-col">
-                        <h4><i class="fa fa-copyright"></i> The Grilled Prawn</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime sunt neque nisi, et expedita porro tempora aliquid facere eveniet accusantium ab voluptate ipsum quisquam quae dolores deleniti eos autem!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- end of footer section -->
         </div>
-    </div>
-    </div>
+        <div class="recipes-detail">
+            <div class="row">
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">5th MARCH 2016</span>
+                        <span class="align-right">THAI</span>
+                        <h2>Thai Yellow Curry Noodles with Shiitake Mushrooms</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/apple.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">17th MARCH 2016</span>
+                        <span class="align-right">ITALIAN</span>
+                        <h2>Cappellini with Cherry Tomatoes and Fresh basil</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/banner.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">4th APRIL 2016</span>
+                        <span class="align-right">ITALIAN</span>
+                        <h2>Baked Turkey Sausage and Mascarpone Stuffed Shells</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/bread.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">24th MAY 2016</span>
+                        <span class="align-right">ITALIAN</span>
+                        <h2>Caramelised Aplle and Herb Fiocchi</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/burger.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">25th MAY 2016</span>
+                        <span class="align-right">SPANISH</span>
+                        <h2>Pumpkin Beer Cheese Soup</h2>
+                    </div>
+                    <img class="recipe-img w-100" src="Images/chicken.jpg" alt="">
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">22th SEPTEMBER 2016</span>
+                        <span class="align-right">THAI</span>
+                        <h2>Yum Woon Sen with Shrimp(Glass noodle salad with Shrimp)</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/chips.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">14th OCTOBER 2016</span>
+                        <span class="align-right">THAI</span>
+                        <h2>Beef Satays</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/cookies.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">29th OCTOBER 2016</span>
+                        <span class="align-right">FRENCH</span>
+                        <h2>Creamy French Onion Soup Dip in a Bread Bowl</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/curry.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">11th NOVEMBER 2016</span>
+                        <span class="align-right">SPANISH</span>
+                        <h2>Bocadillo Bites</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/egg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">12th NOVEMBER 2016</span>
+                        <span class="align-right">SPANISH</span>
+                        <h2>Paella</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/greenveg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">24th DECEMBER 2016</span>
+                        <span class="align-right">THAI</span>
+                        <h2>Sipcy black Bean Burger</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/museli.jpg" alt="">
+                    </div>
+                </div>
+                <div class="recipes-detail-col w-25">
+                    <div class="recipes-detail-card">
+                        <span class="align-left">9th JANUARY 2017</span>
+                        <span class="align-right">ITALIAN</span>
+                        <h2>Fresh Fig and Pistachio Salad</h2>
+                    </div>
+                    <div class="recipe-variation">
+                        <img class="recipe-img w-100" src="Images/noodle.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="return-top text-none">Return to the top <i class="padding-x padding-y fa fa-angle-up"></i></a>
+        </div>
+        <!-- End of recipe section -->
+        <!--  Feedback section -->
+        <div class="recipe-feedback color-white">
+            <div class="sign-up">
+                <h1 class="color-white color-grey">Spread the world !</h1>
+                <p>Our recipes are awesome, sign up to our newsletter<br> and invite friends to join the Grilled Prawn cult</p>
+            </div>
+            <form action="">
+                <div class="form-remove-row">
+                    <div class="sign-up-col w-25">
+                        <label class="label-signup" for="Name">Name</label>
+                        <input type="text" placeholder="Enter Name" name="name" id="Name" value="Samantha" required>
+                    </div>
+                    <div class="sign-up-col w-25">
+                        <label class="label-signup" for="Surname">Surname</label>
+                        <input type="text" placeholder="Enter Surname" name="surname" id="Surname" value="Smith" required>
+                    </div>
+
+                    <div class="sign-up-col w-25">
+                        <label class="label-signup" for="Name">Email address</label>
+                        <input type="email" placeholder="Enter Email" name="email" id="Email" value="Samantha@smith.com" required>
+                    </div>
+                    <div class="sign-up-col w-25 center text-align-c">
+                        <i class="margin-top fa fa-trash-can"></i><label> Remove</label>
+                    </div>
+                </div>
+                <div class="form-add-row">
+                    <div class="sign-up-col w-25">
+                        <label class="label-signup" for="Name">Name</label>
+                        <input type="text" placeholder="Enter Name" name="name" id="Name" value="George" required></div>
+
+                    <div class="sign-up-col w-25">
+                        <label class="label-signup" for="Surname">Surname</label>
+                        <input type="text" placeholder="Enter Surname" name="surname" id="Surname" value="Stone" required>
+                    </div>
+
+                    <div class="sign-up-col w-25">
+                        <label class="label-signup" for="Name">Email address</label>
+                        <input type="email" placeholder="Enter Email" name="email" id="Email" value="george.stone@gmail.com" required>
+                    </div>
+                    <div class="sign-up-col w-25 center text-align-c">
+                        <button class="margin-top btn btn-sign-up text-align-c backcolor-white color-white">Add Friend</button>
+                    </div>
+                </div>
+                <div class="button-send text-align-c">
+                    <button class="btn btn-send backcolor-white">Send <i class="padding-x fa fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- End of feedback section -->
+    <!-- end of main -->
+    <!-- footer section -->
+    <footer id="grilled-detail">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Our Recipes</h4>
+                <p>All our reipes are tested throughly by us to make sure they're suitable for your kitchen at home. We may know many of you are concerned about healthy eating, so we send them to a qualified nutritionist for thjrough analysis too.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Grilled Praw's History</h4>
+                <p>The Grilled prawn is a fictional food blog created in january 2015.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Tips and Tricks</h4>
+                <p>Not sure how to do something? Don't panic. We have plenty of tutorials for you.
+                </p>
+                <a href="#" class="text-none footer-para">Learn more</a>
+            </div>
+            <div class="footer-col">
+                <h4>Help and Contact</h4>
+                <p>Struggling with one of the recipes?
+                </p>
+                <a href="mailto:knavneet@qualminds.com" class="text-none footer-para">Send us an email</a>
+            </div>
+            <div class="footer-col">
+                <h4><i class="fa fa-copyright"></i> The Grilled Prawn</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime sunt neque nisi, et expedita porro tempora aliquid facere eveniet accusantium ab voluptate ipsum quisquam quae dolores deleniti eos autem!
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end of footer section -->
 </body>
 
 </html>
