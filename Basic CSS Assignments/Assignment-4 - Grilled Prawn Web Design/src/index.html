@@ -14,14 +14,13 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
+
     <!-- header section -->
     <header>
         <div class="row">
             <div class="header-logo w-25">
                 <img class="header-logo-img" src="Images/prawn-logo.jpg">
-                <p class="logo-span text-align-c">The Grilled Prawn</p>
-
+                <h4 class="logo-span text-align-c">The Grilled Prawn</h4>
             </div>
             <div class="header-navigation w-75">
                 <a href="#recipes">RECIPES</a>
@@ -64,10 +63,15 @@
                     <div class="filter-column-right">
                         <div class="sort-left">
                             <span class="span-sort">Sort by</span>
-                            <button class="btn text-align-c backcolor-white">Newest first <i class="padding-x fa fa-angle-down"></i></button>
+                            <select class="select backcolor-white" name="" id="">
+                                <option value="0">Newest first</option>
+                                <option value="1">Newest first</option>
+                                <option value="2">Newest first</option>
+                                </select>
+                            <!-- <button class="btn text-align-c backcolor-white"> <i class="padding-x fa fa-angle-down"></i></button> -->
                         </div>
                         <div class="search text-align-c">
-                            <i class="padding-x fa fa-search"></i><span class="span-search"> Search recipe</span>
+                            <i class="fa fa-search"></i><input type="text" placeholder="Search recipe" name="search">
                         </div>
                     </div>
                 </div>
