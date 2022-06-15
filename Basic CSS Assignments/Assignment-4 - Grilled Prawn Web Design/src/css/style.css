@@ -1,3 +1,8 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
     html,
     body,
     div {
@@ -74,7 +79,7 @@
         height: 100px;
         border-radius: 100%;
         position: absolute;
-        left: 65px;
+        left: 57px;
     }
     
     .logo-text {
@@ -94,7 +99,7 @@
         padding-bottom: 25px;
         border: none;
         outline: none;
-        width: 100px;
+        width: 110px;
         font-size: 15px;
         text-align: right;
         padding-right: 0;
@@ -207,18 +212,23 @@
     .filter-column-left {
         padding: 10px;
         width: 24%;
+        position: relative;
     }
     
     .filter-column-right {
         width: 76%;
         background-color: #f6f6f6;
         padding: 10px 0 10px 10px;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .filter-span-right {
         float: right;
         font-size: 20px;
-        position: relative;
+        position: absolute;
+        right: 7px;
+        top: 12px;
     }
     
     .filter-span-left {
@@ -226,7 +236,7 @@
     }
     
     .sort-left {
-        float: left;
+        width: 50%;
     }
     
     .sort-left button {
@@ -234,6 +244,7 @@
     }
     
     .search {
+        width: 50%;
         text-align: right;
     }
     /* The container */
@@ -380,13 +391,19 @@
         padding: 15px;
         display: inline-block;
         border: none;
-        width: 85%;
+        width: 100%;
         border-radius: 5px;
         margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    
+    .sign-up-col {
+        width: 25%;
+        padding: 10px;
     }
     
     .center {
-        padding: 20px 0;
+        padding: 30px 0;
     }
     
     input[type=text]:focus,
@@ -396,7 +413,6 @@
     
     .btn-sign-up {
         background-color: #FF4A52;
-        padding: 10px 20px;
         border: 1px solid white;
     }
     
@@ -406,7 +422,6 @@
     
     .btn-send {
         border: none;
-        padding: 15px 30px !important;
     }
     
     .label-signup {
@@ -425,7 +440,6 @@
     .form-remove,
     .form-add {
         padding: 20px 0;
-        display: flex;
     }
     
     .form-remove {
@@ -440,6 +454,7 @@
     .footer-col {
         width: 20%;
         color: #6e6e6e;
+        padding: 15px;
     }
     
     .footer-para {
@@ -501,15 +516,10 @@
         }
         .country-dish {
             padding-bottom: 20px;
-            width: 100%;
+            width: 50%;
         }
         .banner {
             padding-bottom: 40px;
-        }
-        .banner h3,
-        .banner h1,
-        .banner p {
-            font-size: inherit;
         }
         .header-logo-img {
             left: 75px;
@@ -521,8 +531,6 @@
         .banner-text {
             padding: 20px;
         }
-        .filter-span-left,
-        .filter-span-right,
         .filter-column-left,
         .filter-column-right {
             width: 50%;
@@ -604,7 +612,7 @@
         }
         .country-dish {
             padding-bottom: 20px;
-            width: 50%;
+            width: 33.33%;
         }
         .sign-up-col {
             width: 50%;
@@ -621,13 +629,12 @@
         }
         .banner-text>h1 {
             padding-right: 20px;
-            font-size: 20px;
         }
         .banner-text {
             padding: 10px;
         }
         .btn {
-            padding: 15px 5px;
+            padding: 15px 25px;
         }
         .btn-sign-up {
             width: 50%;
