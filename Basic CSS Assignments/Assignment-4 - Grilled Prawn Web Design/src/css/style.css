@@ -30,6 +30,14 @@
         width: 25%;
     }
     
+    .w-30 {
+        width: 30%;
+    }
+    
+    .w-70 {
+        width: 70%;
+    }
+    
     .w-75 {
         width: 75%;
     }
@@ -48,12 +56,7 @@
     }
     
     .header-logo {
-        padding: 0 60px;
-    }
-    
-    .logo-image,
-    .logo-span {
-        display: inline;
+        padding: 0 10px;
     }
     
     .header-navigation {
@@ -64,14 +67,19 @@
     .header-navigation a {
         color: #6e6e6e;
         text-decoration: none;
-        padding: 20px;
+        padding: 8px;
     }
     
     .header-logo-img {
         height: 100px;
-        left: 67px;
         border-radius: 100%;
         position: absolute;
+        left: 65px;
+    }
+    
+    .logo-text {
+        padding-top: 28px;
+        padding-left: 151px;
     }
     
     .span-sort {
@@ -106,28 +114,13 @@
         padding: 50px 0;
     }
     
-    .logo-span {
-        width: 70%;
-    }
-    
-    .logo-span {
-        font-weight: 100;
-    }
-    
-    .logo-image {
-        width: 30%;
-    }
-    
     .text-align-c {
         text-align: center;
     }
     
-    .logo-span {
-        color: #fa5650;
-    }
-    
-    .logo-span>h4 {
+    .logo-text>span {
         font-weight: 100;
+        color: #fa5650;
     }
     
     .btn {
@@ -144,7 +137,8 @@
     
     h1 {
         font-size: 30px;
-        margin-top: 20px;
+        margin: 0;
+        padding: 40px 0;
         font-weight: 600;
     }
     
@@ -162,10 +156,6 @@
     
     .b-none {
         border: none;
-    }
-    
-    .banner {
-        overflow: scroll;
     }
     /* .banner-r {
         height: 700px;
@@ -211,7 +201,7 @@
     }
     
     .Recipes-menu {
-        padding: 5px 60px;
+        padding: 0 60px;
     }
     
     .filter-column-left {
@@ -342,7 +332,7 @@
     }
     
     .recipes-detail-col {
-        padding: 0 10px;
+        padding: 20px 10px;
     }
     
     .recipes-detail-col h2 {
@@ -355,8 +345,8 @@
     
     .recipes-detail-card {
         padding: 15px;
-        height: 35%;
         background-color: #fff;
+        height: 150px;
     }
     
     .align-left {
@@ -390,8 +380,9 @@
         padding: 15px;
         display: inline-block;
         border: none;
-        width: 80%;
+        width: 85%;
         border-radius: 5px;
+        margin-bottom: 10px;
     }
     
     .center {
@@ -448,7 +439,6 @@
     
     .footer-col {
         width: 20%;
-        padding: 10px;
         color: #6e6e6e;
     }
     
@@ -456,37 +446,61 @@
         color: #ff0000;
     }
     
-    @media screen and (max-width:575px) {
+    @media screen and (max-width:767px) {
         .footer-col,
-        .recipes-detail-col {
+        .recipes-detail-col,
+        .food-nationality-col,
+        .food-type-col,
+        .sign-up-col,
+        .banner-image,
+        .banner-text {
             width: 100%;
         }
+        .header-logo-img {
+            left: 50%;
+        }
+        footer {
+            padding: 5px;
+        }
+        .footer-col {
+            border-bottom: 1px solid #000;
+        }
         .recipes-detail-col {
-            padding-bottom: 20px;
+            padding: 20px 0;
+        }
+        .recipes-detail-card {
+            overflow: scroll;
         }
         .recipes-detail-col h2 {
-            font-size: 20px;
+            text-align: center;
+        }
+        .recipe-feedback {
+            padding: 5px;
+        }
+        .Recipes-menu,
+        .recipes-detail {
+            padding: 5px;
+        }
+        .Recipes-menu {
+            padding-bottom: 20px;
         }
         .header-logo,
         .header-navigation {
             width: 100%;
             text-align: center;
-            padding: 15px 0;
+            padding: 10px 0;
             display: block;
+        }
+        .logo-text {
+            padding-top: 16px;
+            padding-left: 20px;
         }
         .header-navigation a {
             padding: 5px;
             display: block;
         }
-        .food-nationality-col,
-        .food-type-col {
-            width: 100%;
-        }
         .country-dish {
             padding-bottom: 20px;
-            width: 100%;
-        }
-        .sign-up-col {
             width: 100%;
         }
         .banner {
@@ -507,13 +521,11 @@
         .banner-text {
             padding: 20px;
         }
-        .banner-image,
-        .banner-text {
-            width: 100%;
-        }
+        .filter-span-left,
+        .filter-span-right,
         .filter-column-left,
         .filter-column-right {
-            width: 100%;
+            width: 50%;
         }
         .sort-left,
         .search {
@@ -534,13 +546,6 @@
             width: 100%;
             text-align: center;
         }
-        .logo-image,
-        .logo-span {
-            width: 100%;
-        }
-        .logo-span h4 {
-            margin: 0;
-        }
         .btn {
             padding: 10px;
         }
@@ -549,30 +554,52 @@
         }
     }
     
-    @media only screen and (min-width: 576px) and (max-width: 799px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
         .footer-col,
-        .recipes-detail-col {
+        .recipes-detail-col,
+        .filter-column-left,
+        .filter-column-right,
+        .align-left,
+        .align-right {
             width: 50%;
         }
+        .header-logo-img {
+            left: 25%;
+            top: 1%;
+        }
+        .logo-text {
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+        footer {
+            padding: 25px;
+        }
         .recipes-detail-col {
-            padding-bottom: 10px;
+            padding: 20px 5px;
             margin: 0;
         }
-        .recipes-detail-col h2 {
-            margin: 0;
-            font-size: 15px;
+        .recipes-detail {
+            padding: 20px;
+        }
+        .recipe-feedback {
+            padding: 25px;
+        }
+        .Recipes-menu {
+            padding: 25px;
         }
         .header-logo,
         .header-navigation {
             width: 100%;
             text-align: center;
-            padding: 20px;
+            padding: 28px 0;
         }
         .header-navigation a {
-            padding: 10px;
+            padding: 8px;
         }
         .food-nationality-col,
-        .food-type-col {
+        .food-type-col,
+        .banner-image,
+        .banner-text {
             width: 100%;
         }
         .country-dish {
@@ -592,9 +619,6 @@
         .banner {
             padding-bottom: 50px;
         }
-        /* .header-logo-img {
-            left: 160px;
-        } */
         .banner-text>h1 {
             padding-right: 20px;
             font-size: 20px;
@@ -608,31 +632,16 @@
         .btn-sign-up {
             width: 50%;
         }
-        .banner-image,
-        .banner-text {
-            width: 50%;
-        }
-        .filter-column-left,
-        .filter-column-right {
-            width: 50%;
+        .border-left {
+            border: none;
         }
         .sort-left,
         .search {
-            width: 50%;
             text-align: center;
-        }
-        .header-logo-img,
-        .logo-span {
-            display: inline;
-        }
-        .logo-image,
-        .logo-span {
             width: 50%;
-            display: inline-block;
         }
-        .align-left,
         .align-right {
-            width: 100%;
+            text-align: right;
         }
         .recipes-detail-card {
             padding: 10px;
