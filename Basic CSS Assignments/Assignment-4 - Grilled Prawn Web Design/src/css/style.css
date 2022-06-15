@@ -344,6 +344,7 @@
     
     .recipes-detail-col {
         padding: 20px 10px;
+        flex-basis: 25%;
     }
     
     .recipes-detail-col h2 {
@@ -400,6 +401,10 @@
     .sign-up-col {
         width: 25%;
         padding: 10px;
+    }
+    
+    .remove {
+        padding-top: 40px !important;
     }
     
     .center {
@@ -540,9 +545,6 @@
             width: 100%;
             text-align: center;
         }
-        .select {
-            padding: 10px;
-        }
         .btn-send {
             padding: 15px 30px;
         }
@@ -603,6 +605,9 @@
         }
         .header-navigation a {
             padding: 8px;
+        }
+        .search {
+            padding-top: 20px;
         }
         .food-nationality-col,
         .food-type-col,
