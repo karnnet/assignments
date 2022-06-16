@@ -66,7 +66,7 @@
     
     .header-navigation {
         text-align: right;
-        padding: 30px 40px;
+        padding: 30px 50px;
     }
     
     .header-navigation a {
@@ -107,7 +107,7 @@
     }
     
     .select {
-        padding: 15px 25px;
+        padding: 15px;
         border-radius: 3px;
         border: 1px solid #000;
         font-size: 15px;
@@ -344,7 +344,7 @@
     
     .recipes-detail-col {
         padding: 20px 10px;
-        flex-basis: 25%;
+        width: 25%;
     }
     
     .recipes-detail-col h2 {
@@ -358,7 +358,7 @@
     .recipes-detail-card {
         padding: 15px;
         background-color: #fff;
-        height: 150px;
+        height: 185px;
     }
     
     .align-left {
@@ -427,6 +427,7 @@
     
     .btn-send {
         border: none;
+        padding: 15px 30px;
     }
     
     .label-signup {
@@ -556,9 +557,6 @@
             width: 100%;
             text-align: center;
         }
-        .btn {
-            padding: 10px;
-        }
         .border-left {
             border: 0;
         }
@@ -637,12 +635,6 @@
         }
         .banner-text {
             padding: 10px;
-        }
-        .btn {
-            padding: 15px 25px;
-        }
-        .btn-sign-up {
-            width: 50%;
         }
         .border-left {
             border: none;
