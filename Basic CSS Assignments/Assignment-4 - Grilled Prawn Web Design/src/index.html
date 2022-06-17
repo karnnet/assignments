@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -32,8 +33,18 @@
                 <a href="#">DECORATIONS</a>
                 <a href="#grilled-detail">ABOUT THE GRILLED PRAWN</a>
             </div>
+            <div class="menu">
+                <a href="javascript:void(0)" class="nav-link-small" onclick="sidebarOpen()"><i class="fa fa-bars"></i></a>
+            </div>
         </div>
     </header>
+    <div class="nav-sidebar" id="sidebar" style="display:none">
+        <a href="javascript:void(0)" onclick="sidebarClose()" class="sidebar-close">Close  <i class="fa fa-close"></i></a>
+        <a href="#recipes" onclick="sidebarClose()">RECIPES</a>
+        <a href="#" onclick="sidebarClose()">DRINKS</a>
+        <a href="#" onclick="sidebarClose()">DECORATIONS</a>
+        <a href="#grilled-detail" onclick="sidebarClose()">ABOUT THE GRILLED PRAWN</a>
+    </div>
     <!-- end of header -->
     <!-- main section  -->
     <main>
@@ -370,6 +381,21 @@
 
     </footer>
     <!-- end of footer section -->
+    <script>
+        var sidebar = document.getElementById('sidebar');
+
+        function sidebarClose() {
+            sidebar.style.display = "none";
+        }
+
+        function sidebarOpen() {
+            if (sidebar.style.display == "none") {
+                sidebar.style.display = "block";
+            } else {
+                sidebar.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
