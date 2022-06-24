@@ -38,7 +38,7 @@
             </div>
         </div>
     </header>
-    <div class="nav-sidebar" id="sidebar" style="display:none">
+    <div class="nav-sidebar w-hide w-hide-medium w-hide-large w-show" id="sidebar" style="display:none">
         <a href="javascript:void(0)" onclick="sidebarClose()" class="sidebar-close">Close  <i class="fa fa-close"></i></a>
         <a href="#recipes" onclick="sidebarClose()">RECIPES</a>
         <a href="#" onclick="sidebarClose()">DRINKS</a>
@@ -303,8 +303,7 @@
                 <h1 class="color-white color-grey">Spread the world !</h1>
                 <p>Our recipes are awesome, sign up to our newsletter and invite friends to join the Grilled Prawn cult</p>
             </div>
-            <form action="">
-                <div class="form-remove row">
+            <!-- <div class="form-remove row">
                     <div class="sign-up-col">
                         <label class="label-signup" for="Name">Name</label>
                         <input type="text" placeholder="Enter Name" name="name" id="Name" value="Samantha" required>
@@ -321,7 +320,8 @@
                     <div class="sign-up-col center text-align-c remove">
                         <i class="margin-top fa fa-trash"></i><label> Remove</label>
                     </div>
-                </div>
+                </div> -->
+            <!-- 
                 <div class="form-add row">
                     <div class="sign-up-col">
                         <label class="label-signup" for="Name">Name</label>
@@ -338,11 +338,13 @@
                     <div class="sign-up-col center text-align-c">
                         <button class="margin-top btn btn-sign-up text-align-c backcolor-white color-white">Add Friend</button>
                     </div>
-                </div>
-                <div class="button-send text-align-c">
-                    <button class="btn btn-send backcolor-white">Send <i class="padding-x fa fa-arrow-right"></i></button>
-                </div>
+                </div> -->
+            <form id="formsection" onsubmit="return validate()" autocomplete="off">
+
             </form>
+            <div id="table" class="w-100">
+
+            </div>
         </div>
     </main>
     <!-- End of feedback section -->
@@ -378,21 +380,21 @@
                 </p>
             </div>
         </div>
-
     </footer>
     <!-- end of footer section -->
+    <script src="script/index.js" defer></script>
     <script>
         var sidebar = document.getElementById('sidebar');
 
         function sidebarClose() {
-            sidebar.style.display = "none";
+            sidebar.className.display = "none";
         }
 
         function sidebarOpen() {
-            if (sidebar.style.display == "none") {
-                sidebar.style.display = "block";
+            if (sidebar.className.indexOf("w-show") == -1) {
+                sidebar.className += " w-show";
             } else {
-                sidebar.style.display = "none";
+                sidebar.className = sidebar.className.replace(" w-show", "");
             }
         }
     </script>
