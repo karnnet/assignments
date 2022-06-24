@@ -11,11 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-
     <!-- header section -->
     <header>
         <div class="row">
@@ -38,12 +36,12 @@
             </div>
         </div>
     </header>
-    <div class="nav-sidebar w-hide w-hide-medium w-hide-large w-show" id="sidebar" style="display:none">
-        <a href="javascript:void(0)" onclick="sidebarClose()" class="sidebar-close">Close  <i class="fa fa-close"></i></a>
-        <a href="#recipes" onclick="sidebarClose()">RECIPES</a>
-        <a href="#" onclick="sidebarClose()">DRINKS</a>
-        <a href="#" onclick="sidebarClose()">DECORATIONS</a>
-        <a href="#grilled-detail" onclick="sidebarClose()">ABOUT THE GRILLED PRAWN</a>
+    <div class="nav-sidebar w-hide-medium w-hide-large w-show" id="sidebar">
+        <a href="javascript:void(0)" onclick="sidebarOpen()" class="sidebar-close">Close  <i class="fa fa-close"></i></a>
+        <a href="#recipes" onclick="sidebarOpen()">RECIPES</a>
+        <a href="#" onclick="sidebarOpen()">DRINKS</a>
+        <a href="#" onclick="sidebarOpen()">DECORATIONS</a>
+        <a href="#grilled-detail" onclick="sidebarOpen()">ABOUT THE GRILLED PRAWN</a>
     </div>
     <!-- end of header -->
     <!-- main section  -->
@@ -384,13 +382,8 @@
     <!-- end of footer section -->
     <script src="script/index.js" defer></script>
     <script>
-        var sidebar = document.getElementById('sidebar');
-
-        function sidebarClose() {
-            sidebar.className.display = "none";
-        }
-
         function sidebarOpen() {
+            var x = document.getElementById("sidebar");
             if (sidebar.className.indexOf("w-show") == -1) {
                 sidebar.className += " w-show";
             } else {
