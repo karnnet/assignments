@@ -4,7 +4,6 @@ var form = `
     <label class="label-signup" for="name">Name</label>
     <input type="text" placeholder="Enter Name" name="name" id="name" required>
    </div>
-
 <div class="sign-up-col">
     <label class="label-signup" for="Surname">Surname</label>
     <input type="text" placeholder="Enter Surname" name="surname" id="Surname" required>
@@ -83,60 +82,55 @@ function save() {
 }
 
 function validate() {
-    let isValidTrue = true;
-    let isnametrue = true,
-        issurnametrue = true,
-        isemailtrue = true;
+
+    let isnametrue = true;
+    let issurnametrue = true;
+    let isemailtrue = true;
     let name = document.getElementById("name");
     let Surname = document.getElementById("Surname");
     let email = document.getElementById("email");
 
 
-    if (true) {
-        if (name.value == "") {
-            alert("Field can't be empty")
-            isnametrue = false;
-        } else if (name.value.length < 3) {
-            alert("value is too short ")
-            isnametrue = false;
-        } else if (name.value.match(/ /g)) {
-            alert("no whitespace allowed");
-            isnametrue = false;
-        } else if (name.value.match(/[0-9]/g)) {
-            alert("Name not contain numbers");
-            isnametrue = false;
-        }
+    if (name.value == "") {
+        alert("Field can't be empty")
+        isnametrue = false;
+    } else if (name.value.length < 3) {
+        alert("value is too short ")
+        isnametrue = false;
+    } else if (name.value.match(/ /g)) {
+        alert("no whitespace allowed");
+        isnametrue = false;
+    } else if (name.value.match(/[0-9]/g)) {
+        alert("Name not contain numbers");
+        isnametrue = false;
     }
 
-    if (true) {
-        if (Surname.value == "") {
-            alert("Field can't be empty")
-            issurnametrue = false;
-        } else if (Surname.value.length < 3) {
-            alert("value is too short ")
-            issurnametrue = false;
-        } else if (Surname.value.match(/ /g)) {
-            alert("no whitespace allowed");
-            issurnametrue = false;
-        } else if (Surname.value.match(/[0-9]/g)) {
-            alert("Name not contain numbers");
-            issurnametrue = false;
-        }
+    if (Surname.value == "") {
+        alert("Field can't be empty")
+        issurnametrue = false;
+    } else if (Surname.value.length < 3) {
+        alert("value is too short ")
+        issurnametrue = false;
+    } else if (Surname.value.match(/ /g)) {
+        alert("no whitespace allowed");
+        issurnametrue = false;
+    } else if (Surname.value.match(/[0-9]/g)) {
+        alert("Name not contain numbers");
+        issurnametrue = false;
     }
-    if (true) {
-        if (email.value == "") {
-            alert('Field cannot be empty')
-            isemailtrue = false;
-        } else if (email.value.length < 3) {
-            alert("value is too short ")
-            isemailtrue = false;
-        } else if (email.value.match(/ /g)) {
-            alert("no whitespace allowed");
-            isemailtrue = false;
-        } else if ((!email.value.endsWith(email.value.match(/gmail.com/i))) && !(email.value.endsWith(email.value.match(/qualminds.com/i)))) {
-            alert("Email only ends with gmail.com/qualminds.com");
-            isemailtrue = false;
-        }
+
+    if (email.value == "") {
+        alert('Field cannot be empty')
+        isemailtrue = false;
+    } else if (email.value.length < 3) {
+        alert("value is too short ")
+        isemailtrue = false;
+    } else if (email.value.match(/ /g)) {
+        alert("no whitespace allowed");
+        isemailtrue = false;
+    } else if ((!email.value.endsWith(email.value.match(/gmail.com/i))) && !(email.value.endsWith(email.value.match(/qualminds.com/i)))) {
+        alert("Email only ends with gmail.com/qualminds.com");
+        isemailtrue = false;
     }
 
     // if (name.value == "" || Surname.value == "" || email.value == "") {
@@ -170,7 +164,7 @@ function validate() {
     // }
 
     if (isnametrue & issurnametrue & isemailtrue) {
-        return isValidTrue;
+        return true;
     } else {
         return false;
     }
