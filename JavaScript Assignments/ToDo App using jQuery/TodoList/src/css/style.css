@@ -1,0 +1,91 @@
+ html,
+ body,
+ .container {
+     height: 100%;
+ }
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0;
+     background: #e1e1e1;
+ }
+ 
+ .container {
+     margin: auto;
+     width: 60%;
+     border: 1px solid #cccccc;
+     background-image: url('../images/container-background.png');
+     padding: 20px;
+ }
+ 
+ .todo-form,
+ .todo-list {
+     text-align: center;
+ }
+ 
+ input {
+     width: 100%;
+     padding: 12px;
+     border-radius: 3px;
+     font-size: 15px;
+     border: none;
+     background: #f4efef;
+     outline: none;
+ }
+ 
+ #task_submit {
+     width: 100%;
+     padding: 12px 20px;
+     text-align: center;
+     background-color: #5d706c;
+     color: #fff;
+     font-size: 15px;
+     border: none;
+     cursor: pointer;
+     border-radius: 3px;
+ }
+ 
+ .todo-list {
+     padding: 25px 10px;
+ }
+ 
+ ul {
+     list-style-type: none;
+     padding: 0;
+ }
+ 
+ li {
+     border: 1px solid #fff;
+     padding: 10px;
+     cursor: pointer;
+     margin: 5px 0;
+     background: #f4efef;
+     border-radius: 3px;
+     text-align: left !important;
+ }
+ 
+ .row {
+     width: 100%;
+ }
+ 
+ .row::after {
+     display: table;
+     clear: both;
+     content: '';
+ }
+ 
+ [class*="col-"] {
+     float: left;
+     padding: 10px;
+ }
+ 
+ .col-9 {
+     width: 75%;
+ }
+ 
+ .col-3 {
+     width: 25%;
+ }
