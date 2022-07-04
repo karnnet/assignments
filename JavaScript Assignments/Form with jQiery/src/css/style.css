@@ -1,0 +1,72 @@
+html,
+body,
+.container {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #e1e1e1;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    border: 1px solid #ccc;
+    background-image: url('../image/container-background.png');
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.row {
+    width: 100%;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.col {
+    width: 100%;
+}
+
+.label {
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 3px;
+    font-size: 15px;
+    border: none;
+    background: #f4efef;
+    outline: none;
+    margin: 10px 0;
+}
+
+.productdetail-submit {
+    width: 100%;
+    padding: 12px 20px;
+    text-align: center;
+    background-color: #5d706c;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+}
+
+.product-list {
+    text-align: center;
+}
