@@ -1,36 +1,82 @@
 $(() => {
-    var ProductArray = [];
-    $('.productdetail-submit').on('click', function() {
-        var productName = $('#product-name').val();
-        var Quantity = $('#quantity').val();
-        var Price = $('#price').val();
-        if (productName == '' || Quantity == '' || Price == '') {
-            alert('product detail input is required.');
+    var productClickedIndex;
+    var products = [];
+    $('#product_submit').on('click', function() {
+        var productName = $('#product_name').val();
+        var productQuantity = $('#quantity').val();
+        var productPrice = $('#price').val();
+
+        if (!validate(productName, productQuantity, productPrice)) {
             return;
         }
-        var ProductObject = {
-            ProductName: productName,
-            QuantityNo: Quantity,
-            QuantityPrice: Price
+        var product = {
+            name: productName,
+            quantity: productQuantity,
+            price: productPrice,
+
+
         }
-        ProductArray.push(ProductObject);
-        console.log(ProductArray);
+        if ($('#product_submit').text() == 'Add') {
+            products.push(product);
+        } else {
+            products[productClickedIndex] = product;
+        }
+        clearProductList();
+        renderProductList();
         resetForm();
-        renderProductList(ProductArray);
-    })
+    });
+    $('#product_list').on('click', 'tr', function() {
+        productClickedIndex = $(this).index();
+        $('#product_name').val($(this).children('.product-name').text());
+        $('#quantity').val($(this).children('.product-quantity').text());
+        $("#price").val($(this).children('.product-price').text());
+        $('#product_submit').text('Update');
+    });
+    $('#product_list').on('click', 'tr td i', function(event) {
+        var productIndex = $(this).parent('tr').index();
+        products.splice(productIndex, 1);
+        clearProductList();
+        renderProductList();
+        event.stopPropagation();
+    });
 
     function resetForm() {
-        $('#product-name').val(''); // After append the data and clear input box.
+        $('#product_name').val('');
+        $('#quantity').val('1'); // After append the data and clear input box.
         $('#price').val('');
+        $('#product_submit').text('Add');
+        productClickedIndex = -1;
+    }
+    // Clear task list from DOM
+    function clearProductList() {
+        $('#product_list').text('');
+        $('#product_total').text('');
     }
 
-    function renderProductList(ProductItem) {
-        for (var i = 0; i < ProductItem.length; i++) {
-            $('.product-list').append(`<tr>
-        <td>${ProductItem[i].ProductName} </td>
-        <td>${ProductItem[i].QuantityNo}</td>
-        <td>${ProductItem[i].QuantityPrice} </td>
-        </tr>`);
+    function validate(productName, productQuantity, productPrice) {
+        if (productName == '' || productQuantity == '' || productPrice == '') {
+            alert('Product detail input is required.');
+            return false;
         }
+        if (!productPrice.match('^-?\\d*(\\.\\d+)?$')) {
+            alert('enter only number');
+            return false;
+        }
+        return true
+    }
+
+    function renderProductList() {
+        var productTotal = 0;
+        products.forEach(function(product) {
+            $('#product_list').append(`<tr>
+            <td class='product-name'>${product.name}</td>
+            <td class='product-quantity'>${product.quantity}</td>
+            <td class='product-price'>${product.price}</td>
+            <td class='product-subtotal'>${product.quantity*product.price}</td>
+            <td><i class="fa-solid fa-trash align-right"></i></td>
+            </tr>`);
+            productTotal += product.quantity * product.price;
+        });
+        $('#product_total').text(productTotal);
     }
 });
