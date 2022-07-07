@@ -19,10 +19,11 @@ body {
 
 .container {
     margin: auto;
-    width: 60%;
+    width: 80%;
     border: 1px solid #ccc;
-    background-image: url('../image/productbackground.jpg');
+    background-image: linear-gradient(to right top, #e1e1e1, #dadee2, #cfdddf, #cadbd3, #d1d6c4);
     padding: 20px;
+    overflow-y: auto;
 }
 
 .row {
@@ -59,29 +60,42 @@ input {
     padding: 12px 20px;
     text-align: center;
     background-color: #70d4bf;
-    color: #fff;
+    color: #41434d;
     font-size: 15px;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    margin: 10px 0;
+    margin: 40px 0;
 }
 
-table,
+.productrow {
+    width: 100%;
+    display: flex;
+}
+
+.productcol {
+    width: 50%;
+}
+
+table {
+    width: 50%;
+    color: #41434d;
+}
+
 form {
     width: 100%;
-    color: #fff;
+    color: #41434d;
 }
 
 table {
     padding: 10px 5px;
-    border: 1px solid #fff;
+    border: 1px solid #41434d;
 }
 
-
-/* tbody {
-    text-align: center;
-} */
+h1 {
+    text-align: left;
+    color: #073959;
+}
 
 th {
     text-align: left;
@@ -95,15 +109,11 @@ tr {
     cursor: pointer;
 }
 
-tbody {
-    background-color: #66b3cd;
+tbody tr:nth-child(odd) {
+    background-color: #d7d8df;
 }
 
-tr:hover,
-tr:active {
-    background-color: #66b3cd;
-}
-
-.tablefooter {
-    color: bold;
+tbody tr:hover,
+tbody tr:active {
+    background-color: #e6d2d2;
 }
