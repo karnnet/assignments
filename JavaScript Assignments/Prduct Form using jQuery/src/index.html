@@ -31,32 +31,30 @@
             </div>
             <button type="button" id="product_submit">Add</button>
         </form>
-        <div class="productrow">
-            <div class="productcol">
-                <h1>Product Cart</h1>
-                <table>
+        <div class="product-row">
+            <div class="cart-col">
+                <h1 class="border">Product Cart</h1>
+                <table class="cart-list">
                     <thead>
                         <tr>
-                            <th>Product Quantity</th>
-                            <th>Product name</th>
-                            <th>Sub Total</th>
+
                         </tr>
                     </thead>
                     <tbody id="product_cart_list">
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td id="quantity_total"></td>
-                            <td><b>Total</b></td>
+                            <td id="quantity_total">items</td>
+                            <td class="text-right"><b>Total: </b></td>
                             <td id="product_cart_total"></td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
-            <div class="productcol">
+            <div class="product-col">
                 <h1>Product Table</h1>
-                <table>
-                    <thead>
+                <table class="product-list">
+                    <thead class="thead-color">
                         <tr>
                             <th>Product name</th>
                             <th>Product Quantity</th>
@@ -69,7 +67,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="3"><b>Total</b></td>
+                            <td class="text-right" colspan="3"><b>Total: </b></td>
                             <td id="product_total" colspan="2"><b></b></td>
                         </tr>
                     </tfoot>
