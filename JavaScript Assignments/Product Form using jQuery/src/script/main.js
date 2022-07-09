@@ -98,7 +98,7 @@ $(() => {
         $('#product_list').text('');
         $('#product_total').text('');
         $('#product_cart_list').text('');
-        $('#quantity_total').text('');
+        $('#quantity_total span').text('');
         $('#product_cart_total').text('');
     }
 
@@ -116,7 +116,7 @@ $(() => {
         } else if (productQuantity < 0) {
             alert("Quantity can't be negative");
             return false;
-        } else if (productQuantity.match(/[^0-9\.]/g)) {
+        } else if (productQuantity.includes('.')) {
             alert("Quantity can't be decimal value");
             return false;
         } else if (!Number(productPrice)) {
@@ -156,12 +156,12 @@ $(() => {
             $('#product_cart_list').append(`<tr>
             <td>${product.quantity} x </td>
             <td>${product.name}</td>
-            <td>${product.quantity*product.price}</td>
+            <td colspan="2">${product.quantity*product.price}</td>
             </tr>`);
             productTotal += product.quantity * product.price;
             quantityTotal += parseInt(product.quantity);
         });
-        $('#quantity_total').text(quantityTotal);
+        $('#quantity_total span').text(quantityTotal);
         $('#product_cart_total').text(productTotal);
     }
 });
