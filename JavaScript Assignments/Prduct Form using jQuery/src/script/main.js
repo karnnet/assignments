@@ -12,7 +12,7 @@ $(() => {
         var product = {
             name: productName,
             quantity: productQuantity,
-            price: productPrice,
+            price: Math.round(productPrice),
         }
         if ($('#product_submit').text() == 'Add') {
             products.push(product);
@@ -56,18 +56,6 @@ $(() => {
     //     event.stopPropagation();
     // });
 
-
-    // When quantity changes in product list, update array with changed quantity and re-render lists.
-    // $('tbody').on('change', 'tr td input', function(event) {
-    //     var quantityIndex = $(this).parents('tr').index();
-    //     var productUpdate = products[quantityIndex];
-    //     productUpdate.quantity = $(this).val();
-    //     clearProductList();
-    //     renderProductList();
-    //     renderProductCart();
-    //     resetForm();
-    //     event.stopPropagation();
-    // });
 
     //adding quantity value 
     $('#product_list').on('click', 'tr td div .add', function(event) {
