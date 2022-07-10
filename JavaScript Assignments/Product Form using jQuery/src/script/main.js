@@ -28,7 +28,7 @@ $(() => {
     $('#product_list').on('click', 'tr', function(event) {
         productClickedIndex = $(this).index();
         $('#product_name').val($(this).children('.product-name').text());
-        $('#quantity').val($(this).children('.product-quantity').children('input').val());
+        $('#quantity').val($(this).children('.product-quantity').children('div').children('span').text());
         $("#price").val($(this).children('.product-price').text());
         $('#product_submit').text('Update');
         event.stopPropagation();
