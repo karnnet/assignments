@@ -15,8 +15,9 @@ body {
 
 .header-span-right {
     border: 2px solid #fff;
-    border-radius: 20%;
     padding: 10px;
+    border-radius: 100px;
+    ;
 }
 
 .span {
@@ -59,7 +60,7 @@ body {
 }
 
 .btn-card {
-    padding: 5px 65px;
+    padding: 5px 15px;
     border-radius: 20px;
     outline: none;
     border: none;
