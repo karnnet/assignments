@@ -12,7 +12,7 @@ $(() => {
         var product = {
             name: productName,
             quantity: productQuantity,
-            price: Math.round(productPrice),
+            price: parseFloat(productPrice).toFixed(2)
         }
         if ($('#product_submit').text() == 'Add') {
             products.push(product);
@@ -134,11 +134,11 @@ $(() => {
 
     // Render task list from gloabl variable: products array. 
     function renderProductList() {
-        var productTotal = 0;
+        var productTotal = 0.00;
         products.forEach(function(product) {
             $('#product_list').append(`<tr>
             <td class='product-name'>${product.name}</td>
-            <td class='product-quantity'><div class="cart-quantity"><i class="fa fa-minus minus"></i><span class="value">${product.quantity}</span><i class="fa fa-plus add"></i></div></td>
+            <td class='product-quantity'><div class="cart-quantity w-100"><i class="fa fa-minus minus"></i><span class="value">${product.quantity}</span><i class="fa fa-plus add"></i></div></td>
             <td class='product-price'>${product.price}</td>
             <td class='product-subtotal'>${product.quantity*product.price}</td>
             <td><i class="fa-solid fa-trash align-right delete"></i></td>
@@ -150,7 +150,7 @@ $(() => {
 
     // Render the product cart
     function renderProductCart() {
-        var productTotal = 0;
+        var productTotal = 0.00;
         var quantityTotal = 0;
         products.forEach(function(product) {
             $('#product_cart_list').append(`<tr>

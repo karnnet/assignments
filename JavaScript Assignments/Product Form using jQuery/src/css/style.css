@@ -26,18 +26,17 @@ body {
     overflow-y: auto;
 }
 
-.row {
-    width: 100%;
-}
-
 .row::after {
     display: table;
     clear: both;
     content: '';
 }
 
+.w-100 {
+    width: 100%
+}
+
 .col {
-    width: 100%;
     padding: 10px 0;
 }
 
@@ -73,12 +72,12 @@ input {
 }
 
 .product-row {
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product-col {
-    width: 60%;
+    width: 58%;
     padding: 15px;
     background: #f1e6e6;
     margin-left: 10px;
@@ -93,12 +92,10 @@ input {
 }
 
 table {
-    width: 100%;
     color: #51535b;
 }
 
 form {
-    width: 100%;
     color: #41434d;
     padding-bottom: 30px;
 }
@@ -157,7 +154,6 @@ tfoot tr td {
     border: 1px solid #ccc;
     text-align: center;
     border-radius: 30px;
-    width: 100%;
 }
 
 .cart-quantity span,
@@ -169,4 +165,16 @@ tfoot tr td {
 .text-right {
     text-align: right;
     font-weight: bold;
+}
+
+@media screen and (max-width:992px) {
+    .cart-col,
+    .product-col {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .product-col {
+        margin-left: 0;
+        overflow-x: auto;
+    }
 }
