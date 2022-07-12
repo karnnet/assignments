@@ -62,31 +62,31 @@ $(() => {
                         <div class='col-lg-6 text-end'><i class='fa-solid fa-heart'></i></div>
                     </div>
                 </div>
-                <div class='car-model text-center p-2'>
+                <div class='car-model p-2'>
                     <h5 class='card-title text-dark'>${vehicle.year} ${vehicle.make} ${vehicle.model} ${vehicle.trim}</h5>
-                    <h6 class='card-subtitle mb-2 text-muted'>${vehicle.transmission} ${vehicle.driveTrain}</h6>
-
+                    <h6 class='card-subtitle mb-2 text-dark'>${vehicle.transmission} ${vehicle.driveTrain}</h6>
+                    <div class="card-image">
                     <img class='w-50 text-center' src='${vehicle.photoURLs}' alt=''>
-                </div>
-                <div class=''>
-                    <div class='row p-3'>
-                        <div class='col-lg-8'>${vehicle.exteriorColor}</div>
-                        <div class='col-lg-4 text-end'><i class='fa fa-circle' style="color:#${vehicle.extColorHexCode}"></i></div>
+                </div></div>
+                <div class='card-text'>
+                    <div class='row p-2'>
+                        <div class='col-lg-9 color-head'>${vehicle.exteriorColor}</div>
+                        <div class='col-lg-3 text-end'><i class='fa fa-circle' style="color:#${vehicle.extColorHexCode}"></i></div>
                     </div>
-                    <div class='row p-3'>
-                        <div class='col-lg-8'>${vehicle.interiorColor}</div>
-                        <div class='col-lg-4 text-end'><i class='fa fa-circle'></i></div>
+                    <div class='row p-2'>
+                        <div class='col-lg-9 color-head'>${vehicle.interiorColor}</div>
+                        <div class='col-lg-3 text-end'><i class='fa fa-circle'></i></div>
                     </div>
-                    <div class='row p-3'>
-                        <div class='col-lg-8'>Your price</div>
-                        <div class='col-lg-4 text-end'><i class='fa-solid fa-dollar-sign'></i>${vehicle.yourPrice}</div>
+                    <div class='row p-2'>
+                        <div class='col-lg-8 color-head'>Your price</div>
+                        <div class='col-lg-4 text-end'><i class='color-price-light fa fa-dollar-sign'></i>${vehicle.yourPrice}</div>
                     </div>
-                    <div class='row p-3'>
-                        <div class='col-lg-8'>Your Lease Payment</div>
-                        <div class='col-lg-4 text-end'><i class='fa-solid fa-dollar-sign'></i><b>${vehicle.leasePayment}</b></div>
+                    <div class='row p-2'>
+                        <div class='col-lg-8 color-head'>Your Lease Payment</div>
+                        <div class='col-lg-4 text-end'><i class='fa fa-dollar-sign'></i><b>${vehicle.leasePayment}</b></div>
                     </div>
                     <div class='text-center p-2'><button class='text-white btn-card'>View Details</button></div>
-                    <div class='text-center'><i class='text-secondary fa fa-trash'></i></div>
+                    <div class='text-center p-2'><i class='text-secondary color-head fa fa-trash'></i></div>
                 </div>
             </div>
         </div>          
@@ -149,22 +149,22 @@ $(() => {
         }
         vehicleInventory.newModels.forEach(function(newModel) {
             $('#vehicle_inventory').append(`
-                        <div class='card-body p-3'>
+                    <div class='card-body p-2'>
                     <div class='car-model text-center p-3'>
-                        <img class='w-75' width="250" src='${newModel.vehicles.photoURLs}' alt=''>
+                        <img class='w-75' src='${newModel.vehicles.photoURLs}' alt=''>
                     </div>
-                    <div class='p-3'>
-                        <h5 class='card-title text-dark'>${newModel.vehicles.year}</h5>
-                        <h6 class='card-subtitle mb-2 text-muted'> ${newModel.vehicles.make} ${newModel.vehicles.model} ${newModel.vehicles.trim}</h6>
-                        <h6>Lease for $ 267.47 per month</h6>
+                    <div class="car-inventory-detail">
+                    <div class='car-inventory-border p-3'>
+                        <h5 class='card-title car-inventory-year text-dark'>${newModel.vehicles.year}</h5>
+                        <h6 class='card-subtitle car-inventory-model mb-2'>${newModel.vehicles.make} ${newModel.vehicles.model} ${newModel.vehicles.trim}</h6>
+                        <h6 class="car-inventory-price">Lease for $ 267.47 per month <i class="fa-solid fa-circle-info"></i></h6>
                     </div>
-                    <div class="row p-3">
-                        <div class="col-lg-6">View All Offers
-
-                        </div>
+                    <div class="row p-2">
+                        <div class="col-lg-6">View All Offers <i class="fa-solid fa-circle-chevron-right"></i></div>
                         <div class="col-lg-6">
-                            <div class='text-center p-2'><button class='text-white btn-card'>Explore</button></div>
+                            <div class='text-center'><button class='text-white btn-inventory-card'>Explore</button></div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
