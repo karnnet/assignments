@@ -1,3 +1,4 @@
+debugger;
 var form = `
 <div class="form-add row">
 <div class="sign-up-col">
@@ -19,6 +20,7 @@ var form = `
 document.getElementById("formsection").innerHTML = form;
 
 function table() {
+    debugger;
     let table = `<table class="table">
   <thead>
     <tr>
@@ -61,6 +63,7 @@ function setData() {
 };
 
 function save() {
+    debugger;
     let name = document.getElementById("name");
     let Surname = document.getElementById("Surname");
     let email = document.getElementById("email");
@@ -178,6 +181,7 @@ function deleteData(index) {
 };
 
 function edit(index) {
+    debugger;
     let editForm = `<div class="form-add row">
     <div class="sign-up-col">
     <label for="name">Update Name</label>
@@ -200,6 +204,7 @@ function edit(index) {
 }
 
 function update(index) {
+    debugger;
     event.preventDefault();
     let name = document.getElementById('name');
     let Surname = document.getElementById('Surname');
@@ -210,7 +215,7 @@ function update(index) {
         Surname: Surname.value,
         email: email.value
     };
-    var form1 = `
+    var form = `
     <div class="form-add row">
     <div class="sign-up-col">
         <label class="label-signup" for="name">Name</label>
@@ -234,7 +239,7 @@ function update(index) {
         name.value = "";
         Surname.value = "";
         email.value = "";
-        document.getElementById("formsection").innerHTML = form1;
+        document.getElementById("formsection").innerHTML = form;
     } else {
         console.log("data is not updated")
     }
