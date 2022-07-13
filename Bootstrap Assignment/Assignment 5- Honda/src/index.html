@@ -110,57 +110,41 @@
         <div class="favourite-custom-slide">
             <div class="empty"></div>
             <h3 class="text-center p-5">Your favorites and Custom Quotes</h3>
-            <label class="switch text-center p-3">
-                <input type="checkbox" id="togBtn">
-                
-                <div class="slider round"></div>
-                        
-            </label>
-            <div id="carouselExampleControls" class="carousel slide carousel-dark px-4" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div id="card1" class="carousel-item active">
-                        <div class="carousel-item active">
-                            <div id="favorite_vehicles" class="cards wrapper p-2 d-flex">
+            <div class="fav-custom-switch p-3">
+                <label class="switch btn-color-mode-switch">
+		        <input type="checkbox" id="favorite_custom_toggle" value="1">
+		        <label for="favorite_custom_toggle" data-on="Favorites" data-off="Custom Quotes" class="btn-color-mode-switch-inner"></label>
+                </label>
+            </div>
+            <div class="text-center">
+                <span class="favorite-heading">Favorites</span>
+            </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div id="card2" class="carousel-item">
-                        <div class="carousel-item active">
-                            <div id="custom_vehicles" class="cards wrapper p-3 d-flex">
-
-                            </div>
-                        </div>
-                    </div>
+            <div id="favorite_container">
+                <div id="favorite_vehicles" class="cards wrapper p-2 d-flex">
                 </div>
-                <!-- <div class="carousel-inner">
-                    <div id="card" class="carousel-item active">
-                        <div class="carousel-item active">
-                            <div id="favorite_vehicles" class="cards wrapper p-5 d-flex">
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div> -->
-
+            </div>
+            <div id="custom_container" style="display: none;">
+                <div id="custom_vehicles" class="cards wrapper p-3 d-flex">
+                </div>
             </div>
         </div>
-        <div class="container-fluid bg-white p-4">
-            <h3 class="text-center p-4">After you buy, you will be able to...</h3>
-            <div class="row text-center">
-                <div class="col-lg-3 shadow p-3  bg-white">View your<br>Upgrade Option</div>
-                <div class="col-lg-3 shadow p-3  bg-white">View your<br>Upgrade Option</div>
-                <div class="col-lg-3 shadow p-3  bg-white">View your<br>Upgrade Option</div>
-                <div class="col-lg-3 shadow p-3  bg-white">View your<br>Upgrade Option</div>
-            </div>
+    </div>
+    <div class="container-fluid bg-white p-4">
+        <h3 class="text-center p-4">After you buy, you will be able to...</h3>
+        <div class="row text-center">
+            <div class="col-lg-3 shadow p-3  bg-white">View your<br>Upgrade Option</div>
+            <div class="col-lg-3 shadow p-3  bg-white">View your<br>Upgrade Option</div>
+            <div class="col-lg-3 shadow p-3  bg-white">View your<br>Upgrade Option</div>
+            <div class="col-lg-3 shadow p-3  bg-white">View your<br>Upgrade Option</div>
         </div>
-        <div class="inventory-slide">
-            <h3 class="text-center p-5">New Inventory</h3>
-            <div id="vehicle_inventory" class="cards wrapper p-5 d-flex">
+    </div>
+    <div class="inventory-slide">
+        <h3 class="text-center p-5">New Inventory</h3>
+        <div id="vehicle_inventory" class="cards wrapper p-5 d-flex">
 
-            </div>
         </div>
+    </div>
     </div>
 
     <script src="https://kit.fontawesome.com/779cd477c8.js" crossorigin="anonymous"></script>

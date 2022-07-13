@@ -56,19 +56,19 @@ $(() => {
         favoriteVehicles.vehicles.forEach(function(vehicle) {
             $('#favorite_vehicles').append(`
                 <div class='card-body p-3'>
-                <div class='card-header'>
+                <div class='card-header p-3'>
                     <div class='row text-white'>
                         <div class='col-lg-6'>Saved</div>
                         <div class='col-lg-6 text-end'><i class='fa-solid fa-heart'></i></div>
                     </div>
                 </div>
-                <div class='car-model p-2'>
+                <div class='car-model p-3'>
                     <h5 class='card-title text-dark'>${vehicle.year} ${vehicle.make} ${vehicle.model} ${vehicle.trim}</h5>
                     <h6 class='card-subtitle mb-2 text-dark'>${vehicle.transmission} ${vehicle.driveTrain}</h6>
                     <div class="card-image">
                     <img class='w-50 text-center' src='${vehicle.photoURLs}' alt=''>
                 </div></div>
-                <div class='card-text'>
+                <div class='card-text p-3'>
                     <div class='row p-2'>
                         <div class='col-lg-9 color-head'>${vehicle.exteriorColor}</div>
                         <div class='col-lg-3 text-end'><i class='fa fa-circle' style="color:#${vehicle.extColorHexCode}"></i></div>
@@ -103,19 +103,19 @@ $(() => {
         customVehicles.vehicles.forEach(function(vehicle) {
             $('#custom_vehicles').append(`
                 <div class='card-body p-3'>
-                <div class='card-header'>
+                <div class='card-header p-3'>
                     <div class='row text-white'>
                         <div class='col-lg-6'>Custom Lease</div>
-                        <div class='col-lg-6 text-end'><i class='fa-solid fa-calender'></i></div>
+                        <div class='col-lg-6 text-end'><i class="fa-solid fa-calendar-check"></i></div>
                     </div>
                 </div>
-                <div class='car-model text-center p-2'>
+                <div class='car-model text-center p-3'>
                     <h5 class='card-title text-dark'>${vehicle.year} ${vehicle.make} ${vehicle.model} ${vehicle.trim}</h5>
                     <h6 class='card-subtitle mb-2 text-muted'>${vehicle.transmission} ${vehicle.driveTrain}</h6>
 
                     <img class='w-50' src='${vehicle.photoURLs}' alt=''>
                 </div>
-                <div class=''>
+                <div class='p-3'>
                     <div class='row p-3'>
                         <div class='col-lg-8'>${vehicle.exteriorColor}</div>
                         <div class='col-lg-4 text-end'><i class='fa fa-circle' style="color:#${vehicle.extColorHexCode}"></i></div>
@@ -178,8 +178,8 @@ $(() => {
             dots: true,
             infinite: false,
             speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             responsive: [{
                     breakpoint: 1024,
                     settings: {
@@ -209,4 +209,17 @@ $(() => {
             ]
         });
     }
+    $("#favorite_custom_toggle").on("change", function() {
+        if ($(this).prop("checked") == true) {
+            $('#favorite_container').hide();
+            $('#custom_container').show();
+            $("#custom_vehicles").slick("refresh");
+            $('.favorite-heading').text('Custom Quotes');
+        } else if ($(this).prop("checked") == false) {
+            $('#favorite_container').show();
+            $('#custom_container').hide();
+            $("#favorite_vehicles").slick("refresh");
+            $('.favorite-heading').text('Favorites');
+        }
+    })
 });
