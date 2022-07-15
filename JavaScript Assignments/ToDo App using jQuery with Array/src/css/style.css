@@ -108,3 +108,7 @@
      .col-3 {
          width: 25%;
      }
+     
+     .page-heading {
+         text-align: center;
+     }
