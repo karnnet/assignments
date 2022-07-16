@@ -66,7 +66,7 @@ $(() => {
                     <h5 class='card-title text-dark'>${vehicle.year} ${vehicle.make} ${vehicle.model} ${vehicle.trim}</h5>
                     <h6 class='card-subtitle mb-2 text-dark'>${vehicle.transmission} ${vehicle.driveTrain}</h6>
                     <div class="card-image">
-                    <img class='w-50 text-center' src='${vehicle.photoURLs}' alt=''>
+                    <img class='w-50 mx-auto d-block' src='${vehicle.photoURLs}' alt=''>
                 </div></div>
                 <div class='card-text p-3'>
                     <div class='row p-2'>
@@ -113,9 +113,9 @@ $(() => {
                     <h5 class='card-title text-dark'>${vehicle.year} ${vehicle.make} ${vehicle.model} ${vehicle.trim}</h5>
                     <h6 class='card-subtitle mb-2 text-muted'>${vehicle.transmission} ${vehicle.driveTrain}</h6>
 
-                    <img class='w-50' src='${vehicle.photoURLs}' alt=''>
+                    <img class='w-50 mx-auto d-block' src='${vehicle.photoURLs}' alt=''>
                 </div>
-                <div class='p-3'>
+                <div class='p-3 card-text'>
                     <div class='row p-3'>
                         <div class='col-lg-8'>${vehicle.exteriorColor}</div>
                         <div class='col-lg-4 text-end'><i class='fa fa-circle' style="color:#${vehicle.extColorHexCode}"></i></div>
@@ -150,8 +150,8 @@ $(() => {
         vehicleInventory.newModels.forEach(function(newModel) {
             $('#vehicle_inventory').append(`
                     <div class='card-body p-2'>
-                    <div class='car-model text-center p-3'>
-                        <img class='w-75' src='${newModel.vehicles.photoURLs}' alt=''>
+                    <div class='car-model p-3'>
+                        <img class='w-75 mx-auto d-block' src='${newModel.vehicles.photoURLs}' alt=''>
                     </div>
                     <div class="car-inventory-detail">
                     <div class='car-inventory-border p-3'>
@@ -179,13 +179,13 @@ $(() => {
             infinite: false,
             speed: 300,
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 2,
             responsive: [{
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3,
-                        infinite: true,
+                        infinite: false,
                         dots: true
                     }
                 },
@@ -193,14 +193,16 @@ $(() => {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        infinite: false,
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        infinite: false,
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
